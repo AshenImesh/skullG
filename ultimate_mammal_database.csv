@@ -1,0 +1,247 @@
+Common Name,Scientific Name,Order,Eye Orientation,Canine Development,Molar Type,Jaw Length Ratio,Skull Robustness,Body Size Class,Diet Category,Prey/Plant Type,Habitat (Terrestrial),Social Structure,Activity Pattern,Carnivory Score (0-10),Notes / Distinguishing Features
+Sri Lankan Leopard,Panthera pardus kotiya,Carnivora,Forward,Large,Carnassial,Short,Robust,Large,Carnivore,Medium mammals,Forest,Solitary,Nocturnal,10,Endemic to Sri Lanka; smallest leopard subspecies
+Sri Lankan Elephant,Elephas maximus maximus,Proboscidea,Side,Absent,Lophodont,Long,Robust,VeryLarge,Herbivore,Grasses+bark+leaves,Forest,Herd,Diurnal,0,Endemic; smaller ears; two domes on head
+Sloth Bear,Melursus ursinus,Carnivora,Forward,Small,Mixed,Medium,Moderate,Medium,Insectivore,Ants/termites/fruit,Forest,Solitary,Nocturnal,3,Shaggy coat; long claws; specialized termite-eating skull
+Sambar Deer,Rusa unicolor,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Leaves+grass+fruit,Forest,Group,Crepuscular,0,Largest deer in Sri Lanka/Asia; shaggy coat
+Axis Deer (Chital),Axis axis,Artiodactyla,Side,Absent,Selenodont,Long,Gracile,Medium,Herbivore,Grasses+leaves,Forest,Herd,Diurnal,0,Spotted coat; highly social; common in Sri Lanka/India
+Gaur (Indian Bison),Bos gaurus,Artiodactyla,Side,Absent,Selenodont,Long,Robust,VeryLarge,Herbivore,Grasses+leaves,Forest,Herd,Diurnal,0,Largest wild bovine; massive dorsal ridge
+Nilgai,Boselaphus tragocamelus,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Grasses+shrubs,Grassland,Group,Diurnal,0,Largest Asian antelope; blue-gray males
+Blackbuck,Antilope cervicapra,Artiodactyla,Side,Absent,Selenodont,Long,Gracile,Medium,Herbivore,Grasses,Grassland,Herd,Diurnal,0,Spiral horns in males; extremely fast
+Toque Macaque,Macaca sinica,Primates,Forward,Small,Bunodont,Medium,Moderate,Medium,Omnivore,Fruit+insects+seeds,Forest,Group,Diurnal,3,Endemic to Sri Lanka; distinctive crown of hair
+Purple-faced Langur,Trachypithecus vetulus,Primates,Forward,Small,Bunodont,Medium,Moderate,Medium,Herbivore,Leaves+fruit+flowers,Forest,Group,Diurnal,1,Endemic to Sri Lanka; long tail; leaf-eater
+Hanuman Langur,Semnopithecus entellus,Primates,Forward,Small,Bunodont,Medium,Moderate,Medium,Herbivore,Leaves+fruit,Forest,Group,Diurnal,1,Sacred in South Asia; black face and hands
+Lion-tailed Macaque,Macaca silenus,Primates,Forward,Small,Bunodont,Medium,Moderate,Medium,Omnivore,Fruit+insects,Forest,Group,Diurnal,3,Endemic to Western Ghats; silver mane
+Indian Pangolin,Manis crassicaudata,Pholidota,Side,Absent,Absent,Long,Gracile,Medium,Insectivore,Ants+termites,Forest,Solitary,Nocturnal,2,Endemic to South Asia; large scales
+Indian Fox,Vulpes bengalensis,Carnivora,Forward,Large,Carnassial,Medium,Gracile,Small,Omnivore,Insects+small prey,Grassland,Pair,Crepuscular,6,Endemic to Indian subcontinent; large ears
+Golden Jackal,Canis aureus,Carnivora,Forward,Large,Carnassial,Medium,Moderate,Medium,Omnivore,Small prey+fruit,Generalist,Pair,Crepuscular,6,Highly adaptable; common in Sri Lanka/Asia
+Dhole,Cuon alpinus,Carnivora,Forward,Large,Carnassial,Medium,Moderate,Medium,Carnivore,Deer+wild boar,Forest,Group,Diurnal,9,Asiatic wild dog; whistles to communicate
+Fishing Cat,Prionailurus viverrinus,Carnivora,Forward,Large,Carnassial,Short,Moderate,Medium,Carnivore,Fish+amphibians,Forest,Solitary,Nocturnal,9,Webbed paws; flat head; semi-aquatic
+Jungle Cat,Felis chaus,Carnivora,Forward,Large,Carnassial,Short,Moderate,Medium,Carnivore,Small mammals+birds,Generalist,Solitary,Crepuscular,9,Tufted ears; long legs; reed-dweller
+Rusty-spotted Cat,Prionailurus rubiginosus,Carnivora,Forward,Large,Carnassial,Short,Gracile,Small,Carnivore,Small mammals+birds,Forest,Solitary,Nocturnal,9,Smallest wild cat in Asia; endemic to Sri Lanka/India
+Leopard Cat,Prionailurus bengalensis,Carnivora,Forward,Large,Carnassial,Short,Gracile,Small,Carnivore,Small mammals+birds,Forest,Solitary,Nocturnal,9,Widespread in Asia; spotted coat
+Ruddy Mongoose,Herpestes smithii,Carnivora,Forward,Small,Mixed,Medium,Gracile,Small,Omnivore,Insects+crabs+snakes,Forest,Solitary,Diurnal,5,Endemic to South Asia; reddish coat
+Gray Mongoose,Herpestes edwardsii,Carnivora,Forward,Small,Mixed,Medium,Gracile,Small,Omnivore,Insects+eggs+snakes,Generalist,Group,Diurnal,5,Common in South Asia; snake killer
+Stripe-necked Mongoose,Herpestes vitticollis,Carnivora,Forward,Small,Mixed,Medium,Gracile,Small,Omnivore,Insects+crabs+snakes,Forest,Solitary,Nocturnal,5,Endemic to Western Ghats/Sri Lanka
+Mouse Deer (Chevrotain),Tragulus kanchil,Artiodactyla,Side,Absent,Selenodont,Long,Gracile,Small,Herbivore,Leaves+fruit,Forest,Solitary,Nocturnal,0,Smallest hoofed mammal; primitive skull
+Four-horned Antelope,Tetracerus quadricornis,Artiodactyla,Side,Absent,Selenodont,Long,Gracile,Small,Herbivore,Leaves+shoots,Forest,Solitary,Diurnal,0,Endemic to India/Nepal; males have 4 horns
+Indian Giant Squirrel,Ratufa indica,Rodentia,Side,Absent,Lophodont,Medium,Gracile,Medium,Herbivore,Nuts+fruits+bark,Forest,Pair,Diurnal,0,Endemic to India; large; tri-colored
+Indian Crested Porcupine,Hystrix indica,Rodentia,Side,Absent,Lophodont,Medium,Moderate,Medium,Herbivore,Roots+bark+tubers,Generalist,Pair,Nocturnal,0,Large quills; gnaws bones for calcium
+Slender Loris,Loris tardigradus,Primates,Forward,Small,Bunodont,Medium,Gracile,Small,Insectivore,Insects+gum,Forest,Solitary,Nocturnal,2,Endemic to Sri Lanka/India; huge eyes; slow-moving
+Lion,Panthera leo,Carnivora,Forward,Large,Carnassial,Short,Robust,VeryLarge,Carnivore,Large mammals,Savanna,Group,Crepuscular,10,Highly social; mane in males; pride hunter
+Tiger,Panthera tigris,Carnivora,Forward,Large,Carnassial,Short,Robust,VeryLarge,Carnivore,Large mammals,Forest,Solitary,Nocturnal,10,Striped coat; largest wild cat; ambush predator
+Leopard,Panthera pardus,Carnivora,Forward,Large,Carnassial,Short,Robust,Large,Carnivore,Medium mammals,Forest,Solitary,Nocturnal,10,Spotted; hoists kills into trees
+Cheetah,Acinonyx jubatus,Carnivora,Forward,Large,Carnassial,Short,Gracile,Large,Carnivore,Medium mammals,Savanna,Solitary,Diurnal,10,Fastest land animal; non-retractile claws
+Jaguar,Panthera onca,Carnivora,Forward,Large,Carnassial,Short,Robust,VeryLarge,Carnivore,Large mammals,Forest,Solitary,Nocturnal,10,Rosettes with spots inside; strongest bite in cats
+Cougar,Puma concolor,Carnivora,Forward,Large,Carnassial,Short,Robust,Large,Carnivore,Large mammals,Generalist,Solitary,Crepuscular,10,Also called puma/mountain lion; wide range
+Snow Leopard,Panthera uncia,Carnivora,Forward,Large,Carnassial,Short,Robust,Large,Carnivore,Medium mammals,Generalist,Solitary,Crepuscular,10,Long tail for balance; mountain habitat
+Lynx,Lynx lynx,Carnivora,Forward,Large,Carnassial,Short,Moderate,Medium,Carnivore,Small mammals,Forest,Solitary,Crepuscular,9,Tufted ears; short tail; snowshoe paws
+Bobcat,Lynx rufus,Carnivora,Forward,Large,Carnassial,Short,Moderate,Small,Carnivore,Small mammals,Generalist,Solitary,Crepuscular,9,Spotted coat; short bobbed tail
+Wolf,Canis lupus,Carnivora,Forward,Large,Carnassial,Medium,Moderate,Large,Carnivore,Large mammals,Generalist,Group,Crepuscular,9,Pack hunter; howls; ancestor of domestic dog
+Coyote,Canis latrans,Carnivora,Forward,Large,Carnassial,Medium,Moderate,Medium,Omnivore,Small prey+fruit,Generalist,Pair,Crepuscular,7,Highly adaptable; widespread in North America
+Red Fox,Vulpes vulpes,Carnivora,Forward,Large,Carnassial,Medium,Gracile,Small,Omnivore,Rabbits+fruit+insects,Generalist,Pair,Crepuscular,7,Bushy tail; wide habitat range; urban adapter
+Fennec Fox,Vulpes zerda,Carnivora,Forward,Large,Carnassial,Medium,Gracile,Small,Omnivore,Insects+small prey,Desert,Pair,Nocturnal,6,Huge ears for heat dissipation; desert adapted
+Arctic Fox,Vulpes lagopus,Carnivora,Forward,Large,Carnassial,Medium,Gracile,Small,Omnivore,Lemmings+birds,Generalist,Solitary,Variable,7,Thick white winter coat; short ears
+African Wild Dog,Lycaon pictus,Carnivora,Forward,Large,Carnassial,Medium,Moderate,Medium,Carnivore,Medium mammals,Savanna,Group,Diurnal,9,Mottled coat; highly social; cooperative hunter
+Dingo,Canis lupus dingo,Carnivora,Forward,Large,Carnassial,Medium,Moderate,Medium,Carnivore,Medium mammals,Generalist,Group,Crepuscular,8,Australian wild dog; yellow coat
+Maned Wolf,Chrysocyon brachyurus,Carnivora,Forward,Large,Mixed,Long,Gracile,Large,Omnivore,Fruit+small mammals,Grassland,Solitary,Nocturnal,5,"Long legs; ""fox on stilts""; South America"
+Brown Bear,Ursus arctos,Carnivora,Forward,Large,Mixed,Medium,Robust,VeryLarge,Omnivore,Fish+berries+mammals,Forest,Solitary,Diurnal,6,Hibernates; shoulder hump; wide diet
+Polar Bear,Ursus maritimus,Carnivora,Forward,Large,Carnassial,Medium,Robust,VeryLarge,Carnivore,Seals/fish,Generalist,Solitary,Variable,9,White fur; semi-aquatic; Arctic specialist
+Black Bear,Ursus americanus,Carnivora,Forward,Large,Mixed,Medium,Moderate,Large,Omnivore,Berries+insects+meat,Forest,Solitary,Diurnal,5,Smaller than brown bear; good tree climber
+Sun Bear,Helarctos malayanus,Carnivora,Forward,Small,Mixed,Medium,Moderate,Medium,Omnivore,Honey+fruit+insects,Forest,Solitary,Nocturnal,4,Smallest bear; long tongue; chest patch
+Spectacled Bear,Tremarctos ornatus,Carnivora,Forward,Small,Mixed,Medium,Moderate,Medium,Herbivore,Fruit+bromeliads,Forest,Solitary,Nocturnal,2,Only South American bear; facial markings
+Giant Panda,Ailuropoda melanoleuca,Carnivora,Forward,Small,Mixed,Short,Robust,Large,Herbivore,Bamboo,Forest,Solitary,Variable,1,Black-white; modified wrist as pseudo-thumb
+Spotted Hyena,Crocuta crocuta,Carnivora,Forward,Large,Carnassial,Short,Robust,Large,Carnivore,Large mammals,Savanna,Group,Nocturnal,8,Bone-crushing jaws; matriarchal society
+Striped Hyena,Hyaena hyaena,Carnivora,Forward,Large,Carnassial,Short,Robust,Large,Omnivore,Carrion+fruit,Desert,Solitary,Nocturnal,6,Mane along back; scavenger; Middle East/Asia
+Brown Hyena,Parahyaena brunnea,Carnivora,Forward,Large,Carnassial,Short,Robust,Large,Omnivore,Carrion+fruit,Desert,Solitary,Nocturnal,6,Shaggy coat; scavenger; Southern Africa
+Aardwolf,Proteles cristata,Carnivora,Forward,Small,Mixed,Long,Gracile,Medium,Insectivore,Termites,Savanna,Pair,Nocturnal,2,Hyena relative but eats only termites; weak teeth
+Badger,Meles meles,Carnivora,Forward,Large,Mixed,Medium,Robust,Medium,Omnivore,Worms+roots+small prey,Generalist,Solitary,Nocturnal,5,Powerful digger; black-white face stripes
+Wolverine,Gulo gulo,Carnivora,Forward,Large,Carnassial,Medium,Robust,Medium,Carnivore,Medium mammals,Forest,Solitary,Variable,9,Extremely strong for size; scent glands
+Honey Badger,Mellivora capensis,Carnivora,Forward,Large,Mixed,Medium,Robust,Small,Omnivore,Honey+insects+snakes,Generalist,Solitary,Variable,6,Fearless; tough skin; raids beehives
+River Otter,Lontra canadensis,Carnivora,Forward,Large,Carnassial,Medium,Moderate,Medium,Carnivore,Fish+crayfish,Aquatic/Generalist,Pair,Variable,8,Sleek body; webbed feet; playful
+Sea Otter,Enhydra lutris,Carnivora,Forward,Large,Carnassial,Medium,Moderate,Medium,Carnivore,Shellfish+urchins,Coastal,Group,Diurnal,9,Dense fur; uses tools; marine
+Mongoose,Herpestes ichneumon,Carnivora,Forward,Small,Mixed,Medium,Gracile,Small,Omnivore,Insects+eggs+snakes,Generalist,Group,Diurnal,5,Fast reflexes; immune to some venoms
+Meerkat,Suricata suricatta,Carnivora,Forward,Small,Mixed,Medium,Gracile,Small,Insectivore,Insects+scorpions,Desert,Group,Diurnal,4,Sentinel behaviour; stands upright; mob snakes
+Banded Mongoose,Mungos mungo,Carnivora,Forward,Small,Mixed,Medium,Gracile,Small,Omnivore,Insects+small prey,Savanna,Group,Diurnal,5,Highly social; striped back
+African Civet,Civettictis civetta,Carnivora,Forward,Large,Mixed,Medium,Moderate,Medium,Omnivore,Fruit+small prey,Forest,Solitary,Nocturnal,5,Musk glands; spotted/striped pattern
+Asian Palm Civet,Paradoxurus hermaphroditus,Carnivora,Forward,Large,Mixed,Medium,Moderate,Medium,Omnivore,Fruit+insects,Forest,Solitary,Nocturnal,4,Source of Kopi Luwak coffee; long tail
+Binturong,Arctictis binturong,Carnivora,Forward,Large,Mixed,Medium,Moderate,Large,Omnivore,Fruit+small prey,Forest,Solitary,Nocturnal,3,Smells like popcorn; prehensile tail; bearcat
+Genet,Genetta genetta,Carnivora,Forward,Large,Mixed,Medium,Gracile,Small,Omnivore,Insects+small prey,Forest,Solitary,Nocturnal,5,Spotted coat; long ringed tail; cat-like
+Fossa,Cryptoprocta ferox,Carnivora,Forward,Large,Carnassial,Medium,Moderate,Medium,Carnivore,Lemurs+small mammals,Forest,Solitary,Nocturnal,9,Largest carnivore of Madagascar; cat-like
+Striped Skunk,Mephitis mephitis,Carnivora,Forward,Small,Mixed,Medium,Moderate,Small,Omnivore,Insects+fruit+eggs,Generalist,Solitary,Nocturnal,4,Musk spray defence; black-white
+Raccoon,Procyon lotor,Carnivora,Forward,Small,Mixed,Medium,Moderate,Small,Omnivore,Fruit+invertebrates,Forest,Solitary,Nocturnal,4,Masked face; dexterous front paws
+Coati,Nasua nasua,Carnivora,Forward,Small,Mixed,Medium,Moderate,Medium,Omnivore,Fruit+insects+small prey,Forest,Group,Diurnal,4,Long snout; ringed tail; social
+Kinkajou,Potos flavus,Carnivora,Forward,Small,Mixed,Medium,Moderate,Medium,Omnivore,Fruit+honey,Forest,Solitary,Nocturnal,2,"Prehensile tail; ""honey bear""; arboreal"
+African Elephant,Loxodonta africana,Proboscidea,Side,Absent,Lophodont,Long,Robust,VeryLarge,Herbivore,Grasses+bark+leaves,Savanna,Herd,Diurnal,0,Largest land animal; large ears; tusks
+Indian Elephant,Elephas maximus indicus,Proboscidea,Side,Absent,Lophodont,Long,Robust,VeryLarge,Herbivore,Grasses+bark+leaves,Forest,Herd,Diurnal,0,Smaller than African; single dome head
+White Rhinoceros,Ceratotherium simum,Perissodactyla,Side,Absent,Lophodont,Long,Robust,VeryLarge,Herbivore,Grasses,Savanna,Pair,Diurnal,0,Two horns; wide square lip; grazer
+Black Rhinoceros,Diceros bicornis,Perissodactyla,Side,Absent,Lophodont,Long,Robust,VeryLarge,Herbivore,Leaves+shrubs,Savanna,Solitary,Nocturnal,0,Hooked lip; browser; more aggressive
+Indian Rhinoceros,Rhinoceros unicornis,Perissodactyla,Side,Absent,Lophodont,Long,Robust,VeryLarge,Herbivore,Grasses+leaves,Grassland,Solitary,Crepuscular,0,Single horn; armor-plated skin folds
+Javan Rhinoceros,Rhinoceros sondaicus,Perissodactyla,Side,Absent,Lophodont,Long,Robust,VeryLarge,Herbivore,Leaves+shoots,Forest,Solitary,Nocturnal,0,Critically endangered; single small horn
+Sumatran Rhinoceros,Dicerorhinus sumatrensis,Perissodactyla,Side,Absent,Lophodont,Long,Moderate,Medium,Herbivore,Leaves+fruit,Forest,Solitary,Nocturnal,0,Smallest rhino; two horns; hairy
+Hippopotamus,Hippopotamus amphibius,Artiodactyla,Side,Large,Mixed,Long,Robust,VeryLarge,Herbivore,Grasses,Savanna,Group,Nocturnal,1,Semi-aquatic; huge canines for fighting not eating
+Pygmy Hippopotamus,Choeropsis liberiensis,Artiodactyla,Side,Large,Mixed,Long,Moderate,Medium,Herbivore,Leaves+grasses,Forest,Solitary,Nocturnal,1,Smaller; less aquatic; solitary
+Wild Boar,Sus scrofa,Artiodactyla,Side,Large,Bunodont,Medium,Robust,Large,Omnivore,Roots+acorns+worms,Forest,Group,Crepuscular,3,Tusks; rooting snout; bristly coat
+Domestic Pig,Sus scrofa domesticus,Artiodactyla,Side,Large,Bunodont,Medium,Robust,Large,Omnivore,Varied,Generalist,Group,Diurnal,3,Domesticated; highly intelligent; omnivorous
+Common Warthog,Phacochoerus africanus,Artiodactyla,Side,Large,Mixed,Medium,Robust,Large,Omnivore,Grass+roots+bark,Savanna,Group,Diurnal,2,Facial warts; kneels to graze; tusks
+Babirusa,Babyrousa babyrussa,Artiodactyla,Side,Large,Bunodont,Medium,Moderate,Medium,Omnivore,Fruit+roots,Forest,Group,Diurnal,2,"Upward-curving upper tusks; ""pig-deer"""
+Red River Hog,Potamochoerus porcus,Artiodactyla,Side,Large,Bunodont,Medium,Moderate,Medium,Omnivore,Roots+fruit+insects,Forest,Group,Nocturnal,2,Reddish coat; white facial markings
+Domestic Cow,Bos taurus,Artiodactyla,Side,Absent,Selenodont,Long,Robust,VeryLarge,Herbivore,Grasses,Grassland,Herd,Diurnal,0,Domesticated; ruminant; horns variable
+Water Buffalo,Bubalus bubalis,Artiodactyla,Side,Absent,Selenodont,Long,Robust,VeryLarge,Herbivore,Grasses+aquatic plants,Generalist,Herd,Diurnal,0,Semi-domesticated; large curved horns
+Wild Water Buffalo,Bubalus arnee,Artiodactyla,Side,Absent,Selenodont,Long,Robust,VeryLarge,Herbivore,Grasses+aquatic plants,Generalist,Herd,Diurnal,0,Ancestor of domestic buffalo; massive horns
+Yak,Bos grunniens,Artiodactyla,Side,Absent,Selenodont,Long,Robust,VeryLarge,Herbivore,Grasses+lichens,Grassland,Herd,Diurnal,0,Long shaggy hair; high altitude; domesticated
+Bison,Bison bison,Artiodactyla,Side,Absent,Selenodont,Long,Robust,VeryLarge,Herbivore,Grasses,Grassland,Herd,Diurnal,0,Massive shoulder hump; short curved horns
+European Bison,Bison bonasus,Artiodactyla,Side,Absent,Selenodont,Long,Robust,VeryLarge,Herbivore,Grasses+leaves,Forest,Herd,Diurnal,0,Slightly smaller than American bison; taller
+Cape Buffalo,Syncerus caffer,Artiodactyla,Side,Absent,Selenodont,Long,Robust,VeryLarge,Herbivore,Grasses,Savanna,Herd,Diurnal,0,Fused horn boss; unpredictable temperament
+Forest Buffalo,Syncerus caffer nanus,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Leaves+grasses,Forest,Group,Diurnal,0,Smaller; reddish coat; smaller horns
+Gaur,Bos gaurus,Artiodactyla,Side,Absent,Selenodont,Long,Robust,VeryLarge,Herbivore,Grasses+leaves,Forest,Herd,Diurnal,0,Largest wild bovine; massive dorsal ridge
+Banteng,Bos javanicus,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Grasses+leaves,Forest,Herd,Diurnal,0,"White ""stockings""; white rump patch"
+Kouprey,Bos sauveli,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Grasses,Forest,Herd,Diurnal,0,Critically endangered; wispy tail; Cambodia
+Saola,Pseudoryx nghetinhensis,Artiodactyla,Side,Absent,Selenodont,Long,Gracile,Medium,Herbivore,Leaves+shoots,Forest,Solitary,Crepuscular,0,"Asian unicorn; long straight horns; rare"""
+Chinkara (Indian Gazelle),Gazella bennettii,Artiodactyla,Side,Absent,Selenodont,Long,Gracile,Small,Herbivore,Grasses+leaves,Desert,Group,Diurnal,0,Desert adapted; slender build
+Springbok,Antidorcas marsupialis,Artiodactyla,Side,Absent,Selenodont,Long,Gracile,Small,Herbivore,Grasses+leaves,Grassland,Herd,Diurnal,0,National animal of South Africa; pronking
+Impala,Aepyceros melampus,Artiodactyla,Side,Absent,Selenodont,Long,Gracile,Medium,Herbivore,Grasses+leaves,Savanna,Herd,Diurnal,0,Lyre horns in males; leaps high when fleeing
+Thomson's Gazelle,Eudorcas thomsonii,Artiodactyla,Side,Absent,Selenodont,Long,Gracile,Small,Herbivore,Grasses+leaves,Savanna,Herd,Diurnal,0,Flank stripe; pronking; fast runner
+Grant's Gazelle,Nanger granti,Artiodactyla,Side,Absent,Selenodont,Long,Gracile,Medium,Herbivore,Grasses+leaves,Savanna,Herd,Diurnal,0,Larger than Thomson's; white rump
+Gerenuk,Litocranius walleri,Artiodactyla,Side,Absent,Selenodont,Long,Gracile,Medium,Herbivore,Leaves+shoots,Savanna,Group,Diurnal,0,Long neck; stands on hind legs to browse
+Dik-dik,Madoqua kirkii,Artiodactyla,Side,Absent,Selenodont,Long,Gracile,Small,Herbivore,Leaves+shoots,Savanna,Pair,Variable,0,Tiny; elongated snout; monogamous
+Oryx,Oryx gazella,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Grasses+shrubs,Desert,Herd,Diurnal,0,Long straight horns; desert adapted
+Addax,Nasormac addax,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Grasses,Desert,Herd,Diurnal,0,Spiral horns; white coat; critically endangered
+Bongo,Tragelaphus eurycerus,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Leaves+shoots,Forest,Group,Nocturnal,0,Reddish coat; white stripes; spiral horns
+Nyala,Tragelaphus angasii,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Medium,Herbivore,Leaves+shoots,Forest,Group,Variable,0,Males have spiral horns; white stripes
+Greater Kudu,Tragelaphus strepsiceros,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Leaves+shrubs,Forest,Group,Crepuscular,0,Spiral horns; white stripes; browser
+Lesser Kudu,Tragelaphus imberbis,Artiodactyla,Side,Absent,Selenodont,Long,Gracile,Medium,Herbivore,Leaves+shoots,Forest,Group,Crepuscular,0,Smaller; tighter spiral horns; no dewlap
+Eland,Taurotragus oryx,Artiodactyla,Side,Absent,Selenodont,Long,Robust,VeryLarge,Herbivore,Leaves+grasses,Savanna,Herd,Diurnal,0,Largest antelope; dewlap; both sexes horned
+Wildebeest,Connochaetes taurinus,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Grasses,Savanna,Herd,Diurnal,0,Great migration; gnu; curved horns
+Muskox,Ovibos moschatus,Artiodactyla,Side,Absent,Selenodont,Long,Robust,Large,Herbivore,Grasses+lichens,Grassland,Herd,Diurnal,0,Thick shaggy coat; Arctic; defensive circles
+Takin,Budorcas taxicolor,Artiodactyla,Side,Absent,Selenodont,Long,Robust,Large,Herbivore,Leaves+shoots,Forest,Group,Diurnal,0,Goat-antelope; large nose; Himalayan
+Markhor,Capra falconeri,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Grasses+leaves,Generalist,Group,Diurnal,0,Spectacular corkscrew horns; Pakistan
+Bharal (Blue Sheep),Pseudois nayaur,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Grasses+lichens,Grassland,Group,Diurnal,0,Himalayan; intermediate between sheep and goats
+Argali,Ovis ammon,Artiodactyla,Side,Absent,Selenodont,Long,Robust,Large,Herbivore,Grasses,Grassland,Group,Diurnal,0,Largest wild sheep; massive curved horns
+Urial,Ovis vignei,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Medium,Herbivore,Grasses,Grassland,Group,Diurnal,0,Long curved horns; reddish coat
+Mouflon,Ovis gmelini,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Medium,Herbivore,Grasses,Grassland,Group,Diurnal,0,Ancestor of domestic sheep; short horns
+Dall Sheep,Ovis dalli,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Medium,Herbivore,Grasses,Grassland,Group,Diurnal,0,All-white coat; North America
+Bighorn Sheep,Ovis canadensis,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Grasses,Grassland,Group,Diurnal,0,Massive curled horns; North America
+Mountain Goat,Oreamnos americanus,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Medium,Herbivore,Grasses+lichens,Grassland,Group,Diurnal,0,Not a true goat; white shaggy coat; cliffs
+Ibex,Capra ibex,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Grasses+lichens,Grassland,Group,Diurnal,0,Massive backward-curving horns; mountains
+Chamois,Rupicapra rupicapra,Artiodactyla,Side,Absent,Selenodont,Long,Gracile,Medium,Herbivore,Grasses+lichens,Grassland,Group,Diurnal,0,Hooked horns; agile mountain climber
+Tahr,Hemitragus jemlahicus,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Grasses+leaves,Grassland,Group,Diurnal,0,Shaggy coat; Himalayan; wild goat relative
+Goral,Naemorhedus goral,Artiodactyla,Side,Absent,Selenodont,Long,Gracile,Small,Herbivore,Grasses+leaves,Grassland,Group,Diurnal,0,Small; goat-antelope; short horns
+Serow,Capricornis sumatraensis,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Medium,Herbivore,Leaves+shoots,Forest,Solitary,Variable,0,Goat-antelope; shaggy; Southeast Asia
+Red Deer,Cervus elaphus,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Grasses+leaves,Forest,Herd,Crepuscular,0,Branched antlers in males; roaring rut
+Fallow Deer,Dama dama,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Medium,Herbivore,Grasses+leaves,Forest,Herd,Diurnal,0,Palmate antlers; spotted or dark variants
+Roe Deer,Capreolus capreolus,Artiodactyla,Side,Absent,Selenodont,Long,Gracile,Small,Herbivore,Leaves+shoots,Forest,Solitary,Crepuscular,0,Small; short antlers; European
+Moose (Elk),Alces alces,Artiodactyla,Side,Absent,Lophodont,Long,Robust,VeryLarge,Herbivore,Leaves+aquatic plants,Forest,Solitary,Crepuscular,0,Largest deer; palmate antlers; dewlap
+Reindeer (Caribou),Rangifer tarandus,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Lichen+grasses,Generalist,Herd,Diurnal,0,Both sexes have antlers; migrates
+White-tailed Deer,Odocoileus virginianus,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Medium,Herbivore,Leaves+shoots,Forest,Group,Crepuscular,0,White underside of tail; North America
+Mule Deer,Odocoileus hemionus,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Medium,Herbivore,Leaves+shoots,Generalist,Group,Crepuscular,0,Large ears; bifurcated tail; North America
+Hog Deer,Axis porcinus,Artiodactyla,Side,Absent,Selenodont,Medium,Gracile,Small,Herbivore,Grasses+leaves,Generalist,Solitary,Crepuscular,0,Runs with head low like a pig; Asia
+Barking Deer (Muntjac),Muntiacus muntjak,Artiodactyla,Side,Absent,Selenodont,Medium,Gracile,Small,Herbivore,Leaves+fruit+shoots,Forest,Solitary,Crepuscular,0,Small tusks in males; barks like a dog
+Water Deer,Hydropotes inermis,Artiodactyla,Side,Absent,Selenodont,Medium,Gracile,Small,Herbivore,Grasses+reeds,Generalist,Solitary,Crepuscular,0,No antlers; long upper canines (tusks)
+Tufted Deer,Elaphodus cephalophus,Artiodactyla,Side,Absent,Selenodont,Medium,Gracile,Small,Herbivore,Leaves+shoots,Forest,Solitary,Crepuscular,0,Small crest of hair; short antlers; China
+Musk Deer,Moschus moschiferus,Artiodactyla,Side,Absent,Selenodont,Medium,Gracile,Small,Herbivore,Leaves+shoots,Forest,Solitary,Nocturnal,0,No antlers; long upper canines; musk pod
+Père David's Deer,Elaphurus davidianus,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Grasses+aquatic plants,Generalist,Herd,Diurnal,0,Extinct in wild; hooves spread wide; China
+Eld's Deer,Rucervus eldii,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Grasses+leaves,Generalist,Group,Diurnal,0,Thamin; curved antlers; Southeast Asia
+Thorold's Deer,Przewalskium albirostris,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Grasses+lichens,Grassland,Group,Diurnal,0,White muzzle; high altitude; Tibet
+Rusa Deer,Rusa timorensis,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Grasses+leaves,Forest,Group,Crepuscular,0,Rough coat; Southeast Asia/Australia
+Giraffe,Giraffa camelopardalis,Artiodactyla,Side,Absent,Lophodont,Long,Gracile,VeryLarge,Herbivore,Leaves+shoots,Savanna,Group,Diurnal,0,Tallest animal; long neck; ossicones
+Okapi,Okapia johnstoni,Artiodactyla,Side,Absent,Lophodont,Long,Moderate,Large,Herbivore,Leaves+shoots,Forest,Solitary,Diurnal,0,Striped legs; relative of giraffe; prehensile tongue
+Pronghorn,Antilocapra americana,Artiodactyla,Side,Absent,Selenodont,Long,Moderate,Large,Herbivore,Grasses+shrubs,Grassland,Herd,Diurnal,0,Not a true antelope; branched horns; N. America
+Dromedary Camel,Camelus dromedarius,Artiodactyla,Side,Absent,Lophodont,Long,Moderate,Large,Herbivore,Grasses+shrubs,Desert,Herd,Diurnal,0,One hump; domesticated; desert adapted
+Bactrian Camel,Camelus ferus,Artiodactyla,Side,Absent,Lophodont,Long,Moderate,Large,Herbivore,Grasses+shrubs,Desert,Herd,Diurnal,0,Two humps; wild populations in Mongolia
+Llama,Lama glama,Artiodactyla,Side,Absent,Lophodont,Long,Moderate,Large,Herbivore,Grasses,Grassland,Herd,Diurnal,0,Domesticated; pack animal; South America
+Alpaca,Vicugna pacos,Artiodactyla,Side,Absent,Lophodont,Long,Moderate,Medium,Herbivore,Grasses,Grassland,Herd,Diurnal,0,Domesticated; fine fleece; South America
+Guanaco,Lama guanicoe,Artiodactyla,Side,Absent,Lophodont,Long,Moderate,Large,Herbivore,Grasses,Grassland,Herd,Diurnal,0,Wild ancestor of llama; South America
+Vicuña,Vicugna vicugna,Artiodactyla,Side,Absent,Lophodont,Long,Gracile,Medium,Herbivore,Grasses,Grassland,Herd,Diurnal,0,Smallest camelid; finest wool; Andes
+Horse,Equus ferus caballus,Perissodactyla,Side,Absent,Lophodont,Long,Moderate,Large,Herbivore,Grasses,Grassland,Herd,Diurnal,0,Domesticated; single toe (hoof); long face
+Donkey,Equus africanus asinus,Perissodactyla,Side,Absent,Lophodont,Long,Moderate,Medium,Herbivore,Grasses+shrubs,Desert,Group,Diurnal,0,Long ears; bray; domesticated; drought tolerant
+Plains Zebra,Equus quagga,Perissodactyla,Side,Absent,Lophodont,Long,Moderate,Large,Herbivore,Grasses,Savanna,Herd,Diurnal,0,Black-white stripes; social grazer
+Mountain Zebra,Equus zebra,Perissodactyla,Side,Absent,Lophodont,Long,Moderate,Medium,Herbivore,Grasses,Grassland,Herd,Diurnal,0,Dewlap; gridiron pattern on rump; Africa
+Grevy's Zebra,Equus grevyi,Perissodactyla,Side,Absent,Lophodont,Long,Moderate,Large,Herbivore,Grasses,Grassland,Herd,Diurnal,0,Largest zebra; narrow stripes; large ears
+Malayan Tapir,Tapirus indicus,Perissodactyla,Side,Absent,Lophodont,Long,Moderate,Large,Herbivore,Leaves+shoots,Forest,Solitary,Nocturnal,0,"Black and white ""saddle"" pattern; SE Asia"
+Baird's Tapir,Tapirus bairdii,Perissodactyla,Side,Absent,Lophodont,Long,Moderate,Large,Herbivore,Leaves+shoots,Forest,Solitary,Nocturnal,0,Largest Tapir; Central/South America
+South American Tapir,Tapirus terrestris,Perissodactyla,Side,Absent,Lophodont,Long,Moderate,Large,Herbivore,Leaves+shoots,Forest,Solitary,Nocturnal,0,Lowland tapir; dark coat; South America
+Chimpanzee,Pan troglodytes,Primates,Forward,Small,Bunodont,Medium,Moderate,Large,Omnivore,Fruit+insects+meat,Forest,Group,Diurnal,4,Tool use; 98% DNA shared with humans
+Bonobo,Pan paniscus,Primates,Forward,Small,Bunodont,Medium,Moderate,Large,Omnivore,Fruit+leaves+insects,Forest,Group,Diurnal,3,Peaceful; matriarchal; Congo basin
+Gorilla,Gorilla gorilla,Primates,Forward,Large,Lophodont,Medium,Robust,VeryLarge,Herbivore,Leaves+fruit+stems,Forest,Group,Diurnal,1,Largest primate; sagittal crest; knuckle-walks
+Orangutan,Pongo pygmaeus,Primates,Forward,Small,Bunodont,Medium,Moderate,Large,Herbivore,Fruit+leaves+bark,Forest,Solitary,Diurnal,1,Red hair; long arms; highly intelligent
+Baboon,Papio ursinus,Primates,Forward,Large,Bunodont,Medium,Robust,Medium,Omnivore,Grass+fruit+insects,Savanna,Group,Diurnal,4,Dog-like snout; colourful rump; terrestrial
+Mandrill,Mandrillus sphinx,Primates,Forward,Large,Bunodont,Medium,Robust,Large,Omnivore,Fruit+insects+small animals,Forest,Group,Diurnal,4,Colourful face; largest monkey; terrestrial
+Drill,Mandrillus leucophaeus,Primates,Forward,Large,Bunodont,Medium,Robust,Large,Omnivore,Fruit+insects,Forest,Group,Diurnal,4,Similar to mandrill; less colourful face
+Gelada,Theropithecus gelada,Primates,Forward,Large,Lophodont,Medium,Moderate,Medium,Herbivore,Grasses,Grassland,Herd,Diurnal,0,Only grass-eating primate; chest patch; cliffs
+Rhesus Macaque,Macaca mulatta,Primates,Forward,Small,Bunodont,Medium,Moderate,Medium,Omnivore,Fruit+seeds+insects,Generalist,Group,Diurnal,3,Widespread in Asia; highly adaptable
+Bonnet Macaque,Macaca radiata,Primates,Forward,Small,Bunodont,Medium,Moderate,Medium,Omnivore,Fruit+insects+seeds,Forest,Group,Diurnal,3,Endemic to Southern India; cap of hair
+Crab-eating Macaque,Macaca fascicularis,Primates,Forward,Small,Bunodont,Medium,Moderate,Medium,Omnivore,Crabs+fruit+insects,Forest,Group,Diurnal,4,Semi-aquatic; widespread in SE Asia
+Japanese Macaque,Macaca fuscata,Primates,Forward,Small,Bunodont,Medium,Moderate,Medium,Omnivore,Leaves+seeds+insects,Generalist,Group,Diurnal,3,Snow monkey; bathes in hot springs
+Proboscis Monkey,Nasalis larvatus,Primates,Forward,Small,Bunodont,Medium,Moderate,Large,Herbivore,Leaves+unripe fruit,Forest,Group,Diurnal,1,Enormous nose; large belly; Borneo
+Snub-nosed Monkey,Rhinopithecus roxellana,Primates,Forward,Small,Bunodont,Medium,Moderate,Medium,Herbivore,Leaves+lichens,Forest,Group,Diurnal,1,Upturned nose; golden fur; China
+Colobus Monkey,Colobus guereza,Primates,Forward,Small,Bunodont,Medium,Moderate,Medium,Herbivore,Leaves+seeds,Forest,Group,Diurnal,1,Black and white; no thumbs; leaf-eater
+Patas Monkey,Erythrocebus patas,Primates,Forward,Small,Bunodont,Medium,Moderate,Medium,Omnivore,Insects+gum+seeds,Savanna,Group,Diurnal,3,Longest legs of any primate; fast runner
+Ring-tailed Lemur,Lemur catta,Primates,Forward,Small,Bunodont,Medium,Moderate,Medium,Omnivore,Fruit+leaves+insects,Forest,Group,Diurnal,2,Long black-white ringed tail; Madagascar
+Sifaka,Propithecus verreauxi,Primates,Forward,Small,Bunodont,Medium,Gracile,Medium,Herbivore,Leaves+fruit+flowers,Forest,Group,Diurnal,1,White fur; leaps sideways; Madagascar
+Aye-aye,Daubentonia madagascariensis,Primates,Forward,Small,Bunodont,Medium,Gracile,Medium,Omnivore,Insects+fruit,Forest,Solitary,Nocturnal,3,Long middle finger; rodent-like teeth
+Slow Loris,Nycticebus coucang,Primates,Forward,Small,Bunodont,Medium,Gracile,Small,Omnivore,Insects+gum+fruit,Forest,Solitary,Nocturnal,3,Venomous bite; slow-moving; SE Asia
+Tarsier,Tarsius tarsier,Primates,Forward,Small,Bunodont,Medium,Gracile,Small,Insectivore,Insects+small vertebrates,Forest,Solitary,Nocturnal,5,Huge eyes; long ankle bones; SE Asia
+Capuchin Monkey,Cebus capucinus,Primates,Forward,Small,Bunodont,Medium,Moderate,Medium,Omnivore,Fruit+insects+small prey,Forest,Group,Diurnal,4,Highly intelligent; uses tools
+Howler Monkey,Alouatta palliata,Primates,Forward,Small,Bunodont,Medium,Moderate,Medium,Herbivore,Leaves+fruit,Forest,Group,Diurnal,1,Loudest land animal; prehensile tail
+Spider Monkey,Ateles geoffroyi,Primates,Forward,Small,Bunodont,Medium,Gracile,Medium,Herbivore,Fruit+leaves,Forest,Group,Diurnal,1,Long limbs; prehensile tail; no thumb
+Squirrel Monkey,Saimiri sciureus,Primates,Forward,Small,Bunodont,Medium,Gracile,Small,Omnivore,Insects+fruit,Forest,Group,Diurnal,4,Small; masked face; highly social
+Tamarin,Saguinus mystax,Primates,Forward,Small,Bunodont,Medium,Gracile,Small,Omnivore,Insects+fruit+gum,Forest,Group,Diurnal,4,Small; mustache; prehensile tail
+Marmoset,Callithrix jacchus,Primates,Forward,Small,Bunodont,Medium,Gracile,Small,Omnivore,Gum+insects+fruit,Forest,Group,Diurnal,4,Claws instead of nails; twin births
+House Mouse,Mus musculus,Rodentia,Side,Absent,Lophodont,Medium,Gracile,Small,Omnivore,Seeds+grains+insects,Generalist,Group,Nocturnal,2,Massive diastema; continuously growing incisors
+Brown Rat,Rattus norvegicus,Rodentia,Side,Absent,Lophodont,Medium,Moderate,Medium,Omnivore,Seeds+meat+scraps,Generalist,Group,Nocturnal,3,Large; adaptable; widespread
+Black Rat,Rattus rattus,Rodentia,Side,Absent,Lophodont,Medium,Gracile,Medium,Omnivore,Seeds+fruit+insects,Generalist,Group,Nocturnal,3,Climber; smaller than brown rat
+Capybara,Hydrochoerus hydrochaeris,Rodentia,Side,Absent,Lophodont,Medium,Moderate,Large,Herbivore,Grasses+aquatic plants,Savanna,Group,Diurnal,0,Largest rodent; semi-aquatic; South America
+North American Beaver,Castor canadensis,Rodentia,Side,Absent,Lophodont,Medium,Robust,Large,Herbivore,Bark+leaves+aquatic plants,Forest,Pair,Nocturnal,0,Builds dams; flat paddle tail; orange teeth
+Eurasian Beaver,Castor fiber,Rodentia,Side,Absent,Lophodont,Medium,Robust,Large,Herbivore,Bark+leaves+aquatic plants,Forest,Pair,Nocturnal,0,Similar to N.A. beaver; slightly different skull
+African Porcupine,Hystrix africaeaustralis,Rodentia,Side,Absent,Lophodont,Medium,Moderate,Medium,Herbivore,Roots+bark+tubers,Generalist,Pair,Nocturnal,0,Large quills; gnaws bones for calcium
+North American Porcupine,Erethizon dorsatum,Rodentia,Side,Absent,Lophodont,Medium,Moderate,Medium,Herbivore,Bark+leaves,Forest,Solitary,Nocturnal,0,Quills; arboreal; North America
+Guinea Pig,Cavia porcellus,Rodentia,Side,Absent,Lophodont,Medium,Moderate,Medium,Herbivore,Grasses+leaves,Generalist,Group,Variable,0,Domesticated; no tail; South America
+Chinchilla,Chinchilla chinchilla,Rodentia,Side,Absent,Lophodont,Medium,Gracile,Small,Herbivore,Grasses+seeds,Grassland,Group,Nocturnal,0,Densest fur of any land mammal; Andes
+Agouti,Dasyprocta leporina,Rodentia,Side,Absent,Lophodont,Medium,Moderate,Medium,Herbivore,Seeds+fruit,Forest,Solitary,Diurnal,0,Long legs; seed disperser; South America
+Paca,Cuniculus paca,Rodentia,Side,Absent,Lophodont,Medium,Moderate,Large,Herbivore,Fruit+seeds,Forest,Solitary,Nocturnal,0,Spotted coat; large; South America
+Marmot,Marmota marmota,Rodentia,Side,Absent,Lophodont,Medium,Moderate,Large,Herbivore,Grasses+seeds,Grassland,Group,Diurnal,0,Large ground squirrel; hibernates
+Prairie Dog,Cynomys ludovicianus,Rodentia,Side,Absent,Lophodont,Medium,Moderate,Medium,Herbivore,Grasses+seeds,Grassland,Group,Diurnal,0,Complex burrow systems; social
+Groundhog (Woodchuck),Marmota monax,Rodentia,Side,Absent,Lophodont,Medium,Moderate,Large,Herbivore,Grasses+leaves,Generalist,Solitary,Diurnal,0,Large; hibernates; North America
+Gray Squirrel,Sciurus carolinensis,Rodentia,Side,Absent,Lophodont,Medium,Gracile,Medium,Herbivore,Nuts+seeds+fungi,Forest,Solitary,Diurnal,0,Bushy tail; highly adaptable
+Red Squirrel,Sciurus vulgaris,Rodentia,Side,Absent,Lophodont,Medium,Gracile,Small,Herbivore,Nuts+seeds+fungi,Forest,Solitary,Diurnal,0,Tufted ears; smaller than gray squirrel
+Fox Squirrel,Sciurus niger,Rodentia,Side,Absent,Lophodont,Medium,Moderate,Large,Herbivore,Nuts+seeds+fruit,Forest,Solitary,Diurnal,0,Largest tree squirrel; North America
+Flying Squirrel,Pteromys volans,Rodentia,Side,Absent,Lophodont,Medium,Gracile,Small,Herbivore,Nuts+seeds+fungi,Forest,Solitary,Nocturnal,0,Patagium (gliding membrane); large eyes
+Chipmunk,Tamias striatus,Rodentia,Side,Absent,Lophodont,Medium,Gracile,Small,Omnivore,Seeds+insects+fungi,Forest,Solitary,Diurnal,0,Striped back; cheek pouches
+Dormouse,Muscardinus avellanarius,Rodentia,Side,Absent,Lophodont,Medium,Gracile,Small,Omnivore,Nuts+fruit+insects,Forest,Solitary,Nocturnal,2,Long tail; hibernates; Europe
+Jerboa,Jaculus jaculus,Rodentia,Side,Absent,Lophodont,Medium,Gracile,Small,Omnivore,Seeds+insects,Desert,Solitary,Nocturnal,3,Huge hind legs; bipedal hopping; long tail
+Kangaroo Rat,Dipodomys ordii,Rodentia,Side,Absent,Lophodont,Medium,Gracile,Small,Omnivore,Seeds+insects,Desert,Solitary,Nocturnal,3,Does not drink water; bipedal; N. America
+Degu,Octodon degus,Rodentia,Side,Absent,Lophodont,Medium,Moderate,Medium,Herbivore,Grasses+seeds,Grassland,Group,Diurnal,0,Social; diurnal; South America
+Nutria (Coypu),Myocastor coypus,Rodentia,Side,Absent,Lophodont,Medium,Moderate,Large,Herbivore,Aquatic plants,Generalist,Group,Variable,0,Semi-aquatic; orange teeth; invasive
+Springhare,Pedetes capensis,Rodentia,Side,Absent,Lophodont,Medium,Gracile,Small,Herbivore,Grasses+roots,Grassland,Solitary,Nocturnal,0,Kangaroo-like; large hind legs; bipedal hopping
+Cape Hare,Lepus capensis,Lagomorpha,Side,Absent,Lophodont,Long,Gracile,Small,Herbivore,Grasses+leaves,Grassland,Solitary,Nocturnal,0,Long ears; fast runner; no burrow
+European Hare,Lepus europaeus,Lagomorpha,Side,Absent,Lophodont,Long,Gracile,Medium,Herbivore,Grasses+leaves,Grassland,Solitary,Crepuscular,0,Larger than rabbit; long ears; fast
+Jackrabbit,Lepus californicus,Lagomorpha,Side,Absent,Lophodont,Long,Gracile,Medium,Herbivore,Grasses+shrubs,Desert,Solitary,Nocturnal,0,Huge ears; desert adapted; North America
+European Rabbit,Oryctolagus cuniculus,Lagomorpha,Side,Absent,Lophodont,Medium,Gracile,Small,Herbivore,Grasses+herbs,Grassland,Group,Crepuscular,0,Burrows; social; domesticated varieties
+Cottontail Rabbit,Sylvilagus floridanus,Lagomorpha,Side,Absent,Lophodont,Medium,Gracile,Small,Herbivore,Grasses+leaves,Generalist,Solitary,Crepuscular,0,White fluffy tail; widespread in Americas
+Pika,Ochotona princeps,Lagomorpha,Side,Absent,Lophodont,Short,Gracile,Small,Herbivore,Grasses+leaves,Grassland,Solitary,Diurnal,0,"No visible tail; mountain dweller; makes ""hay"""
+Hedgehog,Erinaceus europaeus,Eulipotyphla,Side,Small,Mixed,Medium,Gracile,Small,Insectivore,Insects+worms,Generalist,Solitary,Nocturnal,3,Spiny coat; curls into ball; snuffles
+Mole,Talpa europaea,Eulipotyphla,Side,Small,Mixed,Long,Gracile,Small,Insectivore,Earthworms,Generalist,Solitary,Variable,3,Subterranean; paddle forefeet; tiny eyes
+Shrew,Sorex araneus,Eulipotyphla,Side,Small,Mixed,Long,Gracile,Small,Insectivore,Insects+worms,Generalist,Solitary,Variable,5,High metabolism; venomous saliva; tiny
+Solenodon,Solenodon paradoxus,Eulipotyphla,Side,Small,Mixed,Long,Gracile,Medium,Omnivore,Insects+small vertebrates,Forest,Solitary,Nocturnal,6,Venomous bite; primitive mammal; Caribbean
+Tenrec,Tenrec ecaudatus,Eulipotyphla,Side,Small,Mixed,Medium,Gracile,Small,Omnivore,Insects+worms+fruit,Forest,Solitary,Nocturnal,4,Spiny; Madagascar; convergent with hedgehogs
+Aardvark,Orycteropus afer,Tubulidentata,Side,Absent,Mixed,Long,Gracile,Large,Insectivore,Ants+termites,Savanna,Solitary,Nocturnal,2,Pig-like snout; digs; long sticky tongue
+Giant Anteater,Myrmecophaga tridactyla,Pilosa,Side,Absent,Absent,Long,Gracile,Large,Insectivore,Ants+termites,Savanna,Solitary,Variable,2,No teeth at all; very long snout; bushy tail
+Silky Anteater,Cyclopes didactylus,Pilosa,Side,Absent,Absent,Medium,Gracile,Small,Insectivore,Ants+termites,Forest,Solitary,Nocturnal,2,Tiny; prehensile tail; arboreal
+Tamandua,Tamandua tetradactyla,Pilosa,Side,Absent,Absent,Medium,Gracile,Medium,Insectivore,Ants+termites,Forest,Solitary,Variable,2,"Prehensile tail; ""lesser anteater"""
+Two-toed Sloth,Choloepus didactylus,Pilosa,Side,Small,Mixed,Medium,Gracile,Medium,Herbivore,Leaves+shoots,Forest,Solitary,Nocturnal,0,Slow metabolism; algae in fur; arboreal
+Three-toed Sloth,Bradypus variegatus,Pilosa,Side,Small,Mixed,Medium,Gracile,Medium,Herbivore,Leaves+shoots,Forest,Solitary,Diurnal,0,"Slower than two-toed; facial ""smile"""
+Giant Pangolin,Manis gigantea,Pholidota,Side,Absent,Absent,Long,Gracile,Large,Insectivore,Ants+termites,Savanna,Solitary,Nocturnal,2,Largest pangolin; Africa
+Sunda Pangolin,Manis javanica,Pholidota,Side,Absent,Absent,Long,Gracile,Medium,Insectivore,Ants+termites,Forest,Solitary,Nocturnal,2,SE Asia; highly trafficked
+White-bellied Pangolin,Phataginus tricuspis,Pholidota,Side,Absent,Absent,Long,Gracile,Medium,Insectivore,Ants+termites,Forest,Solitary,Nocturnal,2,Arboreal; long prehensile tail
+Nine-banded Armadillo,Dasypus novemcinctus,Cingulata,Side,Small,Mixed,Medium,Moderate,Medium,Omnivore,Insects+roots+fruit,Grassland,Solitary,Nocturnal,3,Bony armor; rolls into ball; N. America
+Giant Armadillo,Priodontes maximus,Cingulata,Side,Small,Mixed,Medium,Moderate,Large,Insectivore,Ants+termites,Forest,Solitary,Nocturnal,2,Largest armadillo; huge claws
+Pink Fairy Armadillo,Chlamyphorus truncatus,Cingulata,Side,Small,Mixed,Medium,Gracile,Small,Omnivore,Insects+roots,Desert,Solitary,Nocturnal,3,Smallest armadillo; pink shell; burrowing
+Red Kangaroo,Macropus rufus,Diprotodontia,Side,Small,Mixed,Medium,Moderate,Large,Herbivore,Grasses+shrubs,Grassland,Group,Crepuscular,0,Largest marsupial; powerful hind legs
+Eastern Grey Kangaroo,Macropus giganteus,Diprotodontia,Side,Small,Mixed,Medium,Moderate,Large,Herbivore,Grasses,Grassland,Group,Crepuscular,0,Large; widespread in E. Australia
+Wallaby,Macropus agilis,Diprotodontia,Side,Small,Mixed,Medium,Gracile,Medium,Herbivore,Grasses+leaves,Generalist,Group,Crepuscular,0,Smaller than kangaroo; agile
+Koala,Phascolarctos cinereus,Diprotodontia,Side,Small,Mixed,Medium,Moderate,Medium,Herbivore,Eucalyptus leaves,Forest,Solitary,Nocturnal,0,Specialized diet; low metabolism; arboreal
+Common Wombat,Vombatus ursinus,Diprotodontia,Side,Small,Mixed,Medium,Robust,Medium,Herbivore,Grasses+roots,Generalist,Solitary,Nocturnal,0,Burrowing; cube-shaped poop; sturdy
+Sugar Glider,Petaurus breviceps,Diprotodontia,Side,Small,Mixed,Medium,Gracile,Small,Omnivore,Sap+insects+fruit,Forest,Group,Nocturnal,3,Patagium (gliding membrane); small
+Tasmanian Devil,Sarcophilus harrisii,Dasyuromorphia,Forward,Large,Mixed,Short,Robust,Medium,Carnivore,Small mammals+carrion,Forest,Solitary,Nocturnal,7,Fearless; loud screech; strongest bite
+Spotted Quoll,Dasyurus maculatus,Dasyuromorphia,Forward,Large,Mixed,Medium,Moderate,Medium,Carnivore,Small mammals+insects,Forest,Solitary,Nocturnal,8,Largest carnivorous marsupial; spotted
+Numbat,Myrmecobius fasciatus,Dasyuromorphia,Forward,Small,Mixed,Medium,Gracile,Small,Insectivore,Termites,Forest,Solitary,Diurnal,2,Striped back; long tongue; no pouch
