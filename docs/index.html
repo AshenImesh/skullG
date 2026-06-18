@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SKAL4R — Complete Project Documentation</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+
+  :root {
+    --primary: #11001F;
+    --secondary: #DEDBF3;
+    --accent: #6B6A92;
+    --bg: #FFFFFF;
+    --card: #F3F3F7;
+    --code-bg: #1a1a2e;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--primary);
+    background: var(--bg);
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  .cover {
+    background: linear-gradient(135deg, #11001F 0%, #2d0a4e 50%, #6B6A92 100%);
+    color: white;
+    padding: 80px 40px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(222,219,243,0.1) 0%, transparent 60%),
+                radial-gradient(circle at 70% 30%, rgba(107,106,146,0.15) 0%, transparent 50%);
+  }
+  .cover h1 {
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    position: relative;
+  }
+  .cover h1 span { color: #6B6A92; }
+  .cover .subtitle {
+    font-size: 20px;
+    opacity: 0.85;
+    margin-top: 12px;
+    font-weight: 400;
+    position: relative;
+  }
+  .cover .tagline {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-top: 24px;
+    font-family: 'JetBrains Mono', monospace;
+    position: relative;
+  }
+  .cover .stats {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 32px;
+    position: relative;
+  }
+  .cover .stats div {
+    text-align: center;
+  }
+  .cover .stats .num {
+    font-size: 32px;
+    font-weight: 800;
+    color: #DEDBF3;
+  }
+  .cover .stats .lbl {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.6;
+  }
+
+  .toc {
+    background: var(--card);
+    padding: 40px;
+    border-bottom: 1px solid rgba(17,0,31,0.1);
+  }
+  .toc h2 { font-size: 18px; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; }
+  .toc ol { columns: 2; list-style-position: inside; }
+  .toc li { margin: 4px 0; }
+  .toc a { color: var(--primary); text-decoration: none; font-weight: 500; }
+  .toc a:hover { text-decoration: underline; }
+
+  .container { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
+
+  h2 {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 48px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid var(--primary);
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 32px 0 12px;
+  }
+  h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 0 8px;
+  }
+  p { margin: 8px 0 16px; }
+
+  ul, ol { margin: 8px 0 16px 24px; }
+  li { margin: 4px 0; }
+
+  code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    background: rgba(17,0,31,0.06);
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  pre {
+    background: var(--code-bg);
+    color: #e4e4e7;
+    padding: 16px 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 12px 0 24px;
+  }
+  pre .comment { color: #6b7280; }
+  pre .keyword { color: #c084fc; }
+  pre .string { color: #86efac; }
+  pre .number { color: #fbbf24; }
+  pre .func { color: #67e8f9; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    font-size: 13px;
+  }
+  th, td {
+    border: 1px solid rgba(17,0,31,0.15);
+    padding: 8px 12px;
+    text-align: left;
+  }
+  th {
+    background: var(--primary);
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  tr:nth-child(even) td {
+    background: rgba(222,219,243,0.3);
+  }
+
+  .info-box {
+    background: var(--secondary);
+    border-left: 4px solid var(--primary);
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin: 16px 0 24px;
+  }
+  .info-box strong { display: block; margin-bottom: 4px; }
+
+  .flow-diagram {
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    margin: 24px 0;
+    padding: 24px;
+    background: var(--card);
+    border-radius: 8px;
+    border: 1px solid rgba(17,0,31,0.1);
+  }
+  .flow-diagram .arrow { color: var(--accent); font-size: 20px; }
+  .flow-diagram .step {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 4px;
+  }
+
+  .section-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--primary), transparent);
+    margin: 40px 0;
+  }
+
+  @media (max-width: 768px) {
+    body { font-size: 13px; }
+    .cover { padding: 40px 20px 32px; }
+    .cover h1 { font-size: 36px; letter-spacing: -1px; }
+    .cover .subtitle { font-size: 15px; }
+    .cover .tagline { font-size: 12px; }
+    .cover .stats { flex-wrap: wrap; gap: 16px; }
+    .cover .stats div { flex: 1; min-width: 80px; }
+    .cover .stats .num { font-size: 24px; }
+    .cover .stats .lbl { font-size: 9px; }
+
+    .toc { padding: 20px; }
+    .toc ol { columns: 1; }
+    .toc li { margin: 6px 0; }
+
+    .container { padding: 24px 16px; }
+
+    h2 { font-size: 22px; margin: 32px 0 12px; }
+    h3 { font-size: 17px; margin: 24px 0 10px; }
+    h4 { font-size: 15px; }
+
+    ul, ol { margin-left: 16px; }
+
+    pre { font-size: 11px; padding: 12px; margin: 8px 0 16px; }
+
+    code { font-size: 12px; }
+
+    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 12px 0 20px; }
+    .table-wrap table { min-width: 480px; }
+
+    .flow-diagram { padding: 16px; }
+    .flow-diagram .step { font-size: 11px; padding: 6px 12px; margin: 3px; }
+    .flow-diagram .arrow { font-size: 16px; }
+
+    .info-box { padding: 12px 16px; }
+  }
+
+  @media (max-width: 480px) {
+    .cover h1 { font-size: 28px; }
+    .cover .subtitle { font-size: 13px; }
+    .cover .stats { gap: 8px; }
+    .cover .stats .num { font-size: 20px; }
+
+    h2 { font-size: 19px; }
+    h3 { font-size: 15px; }
+
+    pre { font-size: 10px; padding: 8px; }
+
+    .container { padding: 16px 12px; }
+    .toc { padding: 16px; }
+
+    .flow-diagram .step { font-size: 10px; padding: 4px 8px; }
+  }
+
+  @media print {
+    body { font-size: 12px; }
+    .cover { padding: 40px 20px; }
+    .cover h1 { font-size: 42px; }
+    .container { padding: 20px 16px; }
+    h2 { font-size: 22px; margin: 32px 0 12px; }
+    h3 { font-size: 17px; }
+    pre { font-size: 11px; padding: 10px 14px; }
+    table { font-size: 11px; }
+    .toc ol { columns: 1; }
+    .flow-diagram { padding: 16px; }
+    .table-wrap { overflow: visible; }
+    .table-wrap table { min-width: auto; }
+    page-break-before: always;
+    @page { margin: 1.5cm; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== COVER PAGE ===== -->
+<div class="cover">
+  <h1>SKAL<span>4</span>R</h1>
+  <div class="subtitle">Skull-Based Animal Classification Using Adaptive Reasoning</div>
+  <div class="tagline">Version 1.4.7 &mdash; June 2026</div>
+  <div class="stats">
+    <div><div class="num">91</div><div class="lbl">Mammal Species</div></div>
+    <div><div class="num">8</div><div class="lbl">Cranial Traits</div></div>
+    <div><div class="num">109</div><div class="lbl">Sub-Trait Indicators</div></div>
+    <div><div class="num">3</div><div class="lbl">Languages</div></div>
+  </div>
+</div>
+
+<!-- ===== TABLE OF CONTENTS ===== -->
+<div class="toc">
+  <h2>Table of Contents</h2>
+  <ol>
+    <li><a href="#intro">Introduction &amp; Project Purpose</a></li>
+    <li><a href="#tech">Technology Stack</a></li>
+    <li><a href="#structure">Project Structure &amp; File Tree</a></li>
+    <li><a href="#data">Data Layer — The "Database"</a></li>
+    <li><a href="#model1">Math Model 1: Probabilistic Trait Matching</a></li>
+    <li><a href="#model2">Math Model 2: Composite Score Computation</a></li>
+    <li><a href="#model3">Math Model 3: Biological Constraint Enforcement</a></li>
+    <li><a href="#model4">Math Model 4: Diet Biochemistry Radar</a></li>
+    <li><a href="#model5">Math Model 5: Particle Network Animation</a></li>
+    <li><a href="#model6">Math Model 6: PixelBlast — WebGL Procedural Background</a></li>
+    <li><a href="#zoology">Zoological Domain Logic</a></li>
+    <li><a href="#pages">Pages &amp; Routes</a></li>
+    <li><a href="#components">Component Architecture</a></li>
+    <li><a href="#dataflow">Data Flow</a></li>
+    <li><a href="#i18n">Trilingual Architecture (EN / SI / TA)</a></li>
+    <li><a href="#development">Development Process &amp; Deployment</a></li>
+    <li><a href="#glossary">Glossary</a></li>
+  </ol>
+</div>
+
+<div class="container">
+
+<!-- ===== 1. INTRODUCTION ===== -->
+<h2 id="intro">1. Introduction &amp; Project Purpose</h2>
+
+<p>
+  <strong>SKAL4R</strong> (Skull-Based Animal Classification Using Adaptive Reasoning — Model 4) is an interactive educational web application that teaches <strong>craniomorphology</strong> — the science of identifying and classifying mammals by their skull morphology.
+</p>
+
+<div class="info-box">
+  <strong>Core Purpose</strong>
+  Given 8 cranial trait scores (1–10 scale) set by the user via slider controls, the app computes probabilistic matches against a database of 91 terrestrial mammals and returns a ranked list showing which animal is most likely based on skull shape alone.
+</div>
+
+<h3>What It Teaches</h3>
+<ol>
+  <li><strong>Form-Function Relationship</strong> — Skull shape directly reflects diet, habitat, and lifestyle. A dentition score of 9 (carnassial shearing) instantly filters to carnivores only.</li>
+  <li><strong>Constraint Biology</strong> — Traits don't evolve independently. You cannot have carnassial teeth (high dentition) with prey-like lateral eyes (low orbitVision). The app enforces biological reality.</li>
+  <li><strong>Probabilistic Thinking</strong> — Instead of "this is the answer," it shows a ranked probability distribution across 91 animals, reflecting the ambiguity of real-world taxonomy.</li>
+  <li><strong>Multilingual STEM Education</strong> — Targeting Sri Lankan audiences with English, Sinhala, and Tamil support.</li>
+</ol>
+
+<h3>What Problem Does It Solve?</h3>
+<p>
+  Traditional zoology identification requires either physical specimens or expert knowledge. SKAL4R lets anyone explore the relationship between skull morphology and animal classification through an intuitive slider interface, making craniomorphology accessible as a self-directed learning tool.
+</p>
+
+<hr class="section-divider">
+
+<!-- ===== 2. TECHNOLOGY STACK ===== -->
+<h2 id="tech">2. Technology Stack</h2>
+
+<div class="table-wrap"><table>
+  <tr><th>Layer</th><th>Technology</th><th>Version</th><th>Purpose</th></tr>
+  <tr><td>Framework</td><td>Next.js</td><td>15.3.0</td><td>React-based web framework with App Router</td></tr>
+  <tr><td>UI Library</td><td>React</td><td>19.2.6</td><td>Component-based user interface</td></tr>
+  <tr><td>Language</td><td>TypeScript</td><td>5.8</td><td>Static type safety</td></tr>
+  <tr><td>Styling</td><td>Tailwind CSS</td><td>4.3.0</td><td>Utility-first CSS framework</td></tr>
+  <tr><td>3D/WebGL</td><td>Three.js</td><td>0.184.0</td><td>WebGL rendering for background effects</td></tr>
+  <tr><td>Post-processing</td><td>postprocessing</td><td>6.39.1</td><td>WebGL post-processing pipeline</td></tr>
+  <tr><td>Icons</td><td>lucide-react</td><td>1.17.0</td><td>Icon component library</td></tr>
+  <tr><td>QR Codes</td><td>qrcode.react</td><td>4.2.0</td><td>SVG QR code generation</td></tr>
+  <tr><td>Fonts</td><td>Google Fonts</td><td>—</td><td>Outfit (sans) + JetBrains Mono (mono)</td></tr>
+</table></div>
+
+<div class="info-box">
+  <strong>Key Architectural Decision</strong>
+  The entire application is <strong>client-side only</strong>. All data is compiled into the JavaScript bundle at build time. There is no server-side database, API, or authentication. All computation happens in the user's browser.
+</div>
+
+<hr class="section-divider">
+
+<!-- ===== 3. PROJECT STRUCTURE ===== -->
+<h2 id="structure">3. Project Structure &amp; File Tree</h2>
+
+<pre>
+SKAL4R_BACKUP/
+├── <strong>app/</strong>                          <span class="comment"># Next.js App Router pages</span>
+│   ├── layout.tsx                <span class="comment"># Root layout (fonts, nav, LanguageProvider)</span>
+│   ├── page.tsx                  <span class="comment"># Home/landing page</span>
+│   ├── globals.css               <span class="comment"># Tailwind imports + custom theme + glassmorphism</span>
+│   ├── explore/
+│   │   └── page.tsx              <span class="comment"># Interactive slider explorer</span>
+│   ├── encyclopedia/
+│   │   └── page.tsx              <span class="comment"># Full mammal encyclopedia</span>
+│   └── skull-lab/
+│       └── page.tsx              <span class="comment"># Dental morphology lab</span>
+│
+├── <strong>src/</strong>
+│   ├── types.ts                  <span class="comment"># All TypeScript interfaces</span>
+│   │
+│   ├── <strong>data/</strong>                     <span class="comment"># STATIC DATA LAYER</span>
+│   │   ├── animalDatabase.ts     <span class="comment"># 91 mammal records with 8 trait scores each</span>
+│   │   ├── animals.txt           <span class="comment"># Plain list of 91 animal names</span>
+│   │   ├── morphologyData.ts     <span class="comment"># 91 mammals x 109 binary sub-trait indicators</span>
+│   │   ├── traitScoring.ts       <span class="comment"># Weighted scoring algorithm</span>
+│   │   ├── molarGuide.ts         <span class="comment"># 5 molar types with trilingual descriptions</span>
+│   │   └── skullImages.ts        <span class="comment"># File path mapping for skull images</span>
+│   │
+│   ├── <strong>lib/</strong>                      <span class="comment"># BUSINESS LOGIC LAYER</span>
+│   │   ├── animalMatcher.ts      <span class="comment"># Probabilistic matching algorithm</span>
+│   │   └── traitConstraints.ts   <span class="comment"># Biological constraint enforcement</span>
+│   │
+│   ├── <strong>components/</strong>               <span class="comment"># UI COMPONENT LAYER</span>
+│   │   ├── SliderExplorer.tsx    <span class="comment"># Main interactive explorer (state manager)</span>
+│   │   ├── TraitSlider.tsx       <span class="comment"># Individual 1-10 slider control</span>
+│   │   ├── AnimalProbabilityPanel.tsx  <span class="comment"># Top-10 match results panel</span>
+│   │   ├── AnimalDetailModal.tsx <span class="comment"># Full animal detail overlay</span>
+│   │   ├── AnimalCardImage.tsx   <span class="comment"># Lazy-loaded Wikipedia thumbnail</span>
+│   │   ├── Encyclopedia.tsx      <span class="comment"># Full mammal browser with search/filter</span>
+│   │   ├── SkullLab.tsx          <span class="comment"># Molar morphology educational lab</span>
+│   │   ├── ImageMagnifier.tsx    <span class="comment"># Hover-zoom for skull images</span>
+│   │   ├── ConstraintNotification.tsx  <span class="comment"># Toast notifications</span>
+│   │   ├── LanguageProvider.tsx  <span class="comment"># EN/Sinhala/Tamil trilingual support</span>
+│   │   ├── Navigation.tsx        <span class="comment"># Top navigation bar</span>
+│   │   ├── ParticleCanvas.tsx    <span class="comment"># Canvas 2D particle network background</span>
+│   │   └── PixelBlast.tsx        <span class="comment"># WebGL/Three.js pixel-effect background</span>
+│   │
+│   └── assets/                   <span class="comment"># Legacy images</span>
+│
+├── <strong>public/</strong>
+│   ├── skull_images/
+│   │   └── skull_images/         <span class="comment"># 91 skull specimen images</span>
+│   ├── favicon.svg
+│   └── icons.svg
+│
+├── package.json                  <span class="comment"># Dependencies &amp; scripts</span>
+├── next.config.ts
+├── tsconfig.json
+├── postcss.config.mjs
+├── next-env.d.ts
+└── .gitignore
+</pre>
+
+<hr class="section-divider">
+
+<!-- ===== 4. DATA LAYER ===== -->
+<h2 id="data">4. Data Layer — The "Database"</h2>
+
+<p>
+  SKAL4R has no external database. All data is stored as TypeScript constant files that get compiled into the client-side JavaScript bundle. There are four primary data sources:
+</p>
+
+<h3>4.1 <code>animalDatabase.ts</code> — The Main Dataset</h3>
+<p><strong>Location:</strong> <code>src/data/animalDatabase.ts:6-644</code></p>
+<p><strong>Size:</strong> 91 mammal records, each with 14 fields + 8 trait scores.</p>
+
+<div class="table-wrap"><table>
+  <tr><th>Field</th><th>Type</th><th>Example</th></tr>
+  <tr><td>name</td><td>string</td><td>"Cat"</td></tr>
+  <tr><td>scientificName</td><td>string</td><td>"Felis catus"</td></tr>
+  <tr><td>order</td><td>string</td><td>"Carnivora"</td></tr>
+  <tr><td>dietCategory</td><td>'Carnivore' | 'Herbivore' | 'Omnivore' | 'Insectivore'</td><td>"Carnivore"</td></tr>
+  <tr><td>habitat</td><td>string</td><td>"Generalist"</td></tr>
+  <tr><td>socialStructure</td><td>string</td><td>"Solitary"</td></tr>
+  <tr><td>activityPattern</td><td>string</td><td>"Crepuscular"</td></tr>
+  <tr><td>traits</td><td>TraitScores (8 fields × 1-10)</td><td>{ dentition: 9, ... }</td></tr>
+  <tr><td>funFacts</td><td>string[4]</td><td>["Can rotate ears 180°", ...]</td></tr>
+  <tr><td>wikiUrl</td><td>string</td><td>"https://en.wikipedia.org/wiki/Cat"</td></tr>
+</table></div>
+
+<p><strong>Taxonomic Orders Represented:</strong></p>
+<div class="table-wrap"><table>
+  <tr><th>Order</th><th>Count</th><th>Examples</th></tr>
+  <tr><td>Carnivora</td><td>~29</td><td>Cat, Dog, Lion, Bear, Hyena, Otter</td></tr>
+  <tr><td>Artiodactyla</td><td>~18</td><td>Cow, Deer, Giraffe, Hippo, Camel, Bison</td></tr>
+  <tr><td>Rodentia</td><td>~16</td><td>Beaver, Capybara, Rat, Squirrel, Porcupine</td></tr>
+  <tr><td>Primates</td><td>~7</td><td>Chimpanzee, Gorilla, Orangutan, Monkey, Lemur</td></tr>
+  <tr><td>Perissodactyla</td><td>~4</td><td>Horse, Zebra, Rhino, Donkey, Tapir</td></tr>
+  <tr><td>Diprotodontia</td><td>~4</td><td>Kangaroo, Koala, Wallaby, Wombat</td></tr>
+  <tr><td>Lagomorpha</td><td>~3</td><td>Rabbit, Hare, Pika</td></tr>
+  <tr><td>Eulipotyphla</td><td>~3</td><td>Hedgehog, Mole, Shrew</td></tr>
+  <tr><td>Pilosa</td><td>~2</td><td>Anteater, Sloth</td></tr>
+  <tr><td>Others</td><td>~5</td><td>Elephant, Aardvark, Armadillo, Pangolin, etc.</td></tr>
+</table></div>
+
+<h3>4.2 <code>morphologyData.ts</code> — Sub-Trait Binary Vectors</h3>
+<p><strong>Location:</strong> <code>src/data/morphologyData.ts:134-1044</code></p>
+<p>Each animal has <strong>109 binary (0/1) sub-trait indicators</strong> across 8 categories:</p>
+
+<div class="table-wrap"><table>
+  <tr><th>Category</th><th>Sub-traits</th><th>Example Sub-traits</th></tr>
+  <tr><td>Dentition</td><td>27</td><td>Incisor_Absent/Reduced/Normal/Enlarged/ContinuouslyGrowing; Canine_Small/Medium/Large/Extreme; CheekTooth_Bunodont/Selenodont/Lophodont/Secodont/Mixed; Crown_Brachydont/Mesodont/Hypsodont; Diastema_Absent/Small/Large; Carnassials_Absent/Weak/Strong; Dentition_Normal/Reduced/Toothless</td></tr>
+  <tr><td>Skull_Proportions</td><td>16</td><td>Snout_VeryShort/Short/Medium/Long/VeryLong; Skull_Broad/Intermediate/Narrow/Wedge/Elongate; Brain_FaceDominant/Balanced/BraincaseDominant; Rostrum_Gracile/Moderate/Robust</td></tr>
+  <tr><td>Orbit_Vision</td><td>13</td><td>Orbit_Lateral/SemiForward/Forward; OrbitSize_Small/Medium/Large; Postorb_None/Partial/CompleteBar/FullClosure; Interorb_Narrow/Medium/Broad</td></tr>
+  <tr><td>Mandible</td><td>12</td><td>Jaw_Shallow/Moderate/Deep; Coronoid_Low/Medium/High; Angular_Reduced/Moderate/Expanded; Symphysis_Flexible/SemiFused/Fused</td></tr>
+  <tr><td>Nasal_Region</td><td>12</td><td>Nasal_Short/Medium/Long; NasalAp_Narrow/Moderate/Wide; Turbinate_Low/Medium/High; Proboscis_None/Moderate/Strong</td></tr>
+  <tr><td>Muscle_Attachments</td><td>13</td><td>SagCrest_None/Small/Moderate/Large; TempFossa_Small/Medium/Large; Zyg_Thin/Moderate/Robust; Bullae_Small/Medium/Enlarged</td></tr>
+  <tr><td>Cranial_Structure</td><td>6</td><td>Occip_Flat/Rounded/Expanded; FM_Posterior/Intermediate/Inferior</td></tr>
+  <tr><td>Special_Adaptations</td><td>10</td><td>Rodent_Adaptation, Lagomorph_Adaptation, Carnivore_Adaptation, Elephant_Adaptation, Anteater_Adaptation, Burrowing_Adaptation, Arboreal_Adaptation, Aquatic_Adaptation, Cursorial_Adaptation, Fossorial_Adaptation</td></tr>
+</table></div>
+
+<p><strong>Total:</strong> 27 + 16 + 13 + 12 + 12 + 13 + 6 + 10 = <strong>109 sub-traits per animal</strong>.</p>
+
+<h3>4.3 <code>molarGuide.ts</code> — Dental Morphology Reference</h3>
+<p>5 molar types with trilingual descriptions, dietary interpretation, and SVG icons:</p>
+<div class="table-wrap"><table>
+  <tr><th>Molar Type</th><th>Key Feature</th><th>Associated Diet</th></tr>
+  <tr><td>Carnassial</td><td>Scissor-like shearing blades</td><td>Hypercarnivore / Mesocarnivore</td></tr>
+  <tr><td>Lophodont</td><td>Elongated enamel ridges (lophs)</td><td>Herbivore (grasses, tough plants)</td></tr>
+  <tr><td>Selenodont</td><td>Crescent-shaped ridges</td><td>Herbivore (ruminants, soft leafy vegetation)</td></tr>
+  <tr><td>Bunodont</td><td>Low, rounded cusps</td><td>Omnivore (fruits, nuts, meat)</td></tr>
+  <tr><td>Hypsodont</td><td>High-crowned, continuously erupting</td><td>Herbivore (silica-rich grasses)</td></tr>
+</table></div>
+
+<h3>4.4 <code>skullImages.ts</code> — Skull Image Index</h3>
+<p>Maps 91 animal names to skull specimen image filenames stored in <code>public/skull_images/skull_images/</code>.</p>
+
+<hr class="section-divider">
+
+<!-- ===== 5. MATH MODEL 1 ===== -->
+<h2 id="model1">5. Math Model 1: Probabilistic Trait Matching</h2>
+<p><strong>File:</strong> <code>src/lib/animalMatcher.ts</code> &middot; <strong>Function:</strong> <code>calculateProbabilities()</code></p>
+<p><strong>Used in:</strong> The <code>/explore</code> page — runs on every slider change over all 91 animals.</p>
+
+<h3>Step 1 — L1 Distance (Manhattan Distance)</h3>
+<p>For each animal, compute the sum of absolute differences across all 8 traits:</p>
+
+<pre>
+dᵢ = Σₜ |uₜ − aᵢₜ|
+
+<span class="comment">Where:</span>
+<span class="comment">  uₜ = user's slider value for trait t (1–10)</span>
+<span class="comment">  aᵢₜ = animal i's score for trait t (1–10)</span>
+<span class="comment">  t ∈ {dentition, skullProportions, orbitVision, mandible, nasalRegion,</span>
+<span class="comment">       muscleAttachments, cranialStructure, specialAdaptations}</span>
+</pre>
+
+<p><strong>Range:</strong> dᵢ ∈ [0, 72]. 0 = perfect match, 72 = maximally different.</p>
+
+<h3>Step 2 — Exponential Decay Similarity</h3>
+<p>Convert distance to a similarity score bounded in (0, 1]:</p>
+
+<pre>
+sᵢ = exp(−dᵢ × λ)
+
+<span class="comment">Where λ = 0.25 (decay constant)</span>
+</pre>
+
+<div class="table-wrap"><table>
+  <tr><th>dᵢ</th><th>sᵢ = exp(−dᵢ × 0.25)</th><th>Interpretation</th></tr>
+  <tr><td>0</td><td>1.000</td><td>Perfect match</td></tr>
+  <tr><td>1</td><td>0.779</td><td>Close match</td></tr>
+  <tr><td>2</td><td>0.607</td><td>Moderate match</td></tr>
+  <tr><td>5</td><td>0.287</td><td>Weak match</td></tr>
+  <tr><td>10</td><td>0.082</td><td>Very weak match</td></tr>
+  <tr><td>20</td><td>0.007</td><td>Near-zero</td></tr>
+</table></div>
+
+<div class="info-box">
+  <strong>Why Exponential Decay?</strong> This is equivalent to a <strong>radial basis function (RBF) kernel</strong> with σ² = 2/λ = 8. It acts as a soft nearest-neighbor kernel — close matches get high weight, distant matches get vanishingly small weight. This mirrors how biological classification works: a few trait differences can rule out an entire taxonomic group.
+</div>
+
+<h3>Step 3 — Softmax Normalization to Probabilities</h3>
+<p>Convert similarities into a proper probability distribution summing to 100%:</p>
+
+<pre>
+Pᵢ = (sᵢ / Σⱼ sⱼ) × 100%
+
+<span class="comment">Where Σⱼ sⱼ = sum over all 91 animals</span>
+</pre>
+
+<p>This is mathematically equivalent to <strong>softmax with temperature T = 1/λ = 4</strong>:</p>
+
+<pre>
+Pᵢ = exp(−λ · dᵢ) / Σⱼ exp(−λ · dⱼ) = softmax(−λ · distances)
+</pre>
+
+<h3>Step 4 — Independent Match Score (for visual bars)</h3>
+<p>A separate 0–100% metric that does not depend on other animals:</p>
+
+<pre>
+matchScoreᵢ = max(0, 1 − dᵢ / (D_max × 0.5))
+
+<span class="comment">Where D_max = 72 (8 traits × 9), ×0.5 penalizes faster</span>
+<span class="comment">So: matchScoreᵢ = max(0, 1 − dᵢ/36)</span>
+</pre>
+
+<div class="table-wrap"><table>
+  <tr><th>dᵢ</th><th>matchScore</th></tr>
+  <tr><td>0</td><td>100%</td></tr>
+  <tr><td>9</td><td>75%</td></tr>
+  <tr><td>18</td><td>50%</td></tr>
+  <tr><td>36</td><td>0%</td></tr>
+</table></div>
+
+<h3>Complete Pipeline Visualization</h3>
+<div class="flow-diagram">
+  <span class="step">User Sliders</span>
+  <span class="arrow">→</span>
+  <span class="step">L1 Distance</span>
+  <span class="arrow">→</span>
+  <span class="step">exp(−λd)</span>
+  <span class="arrow">→</span>
+  <span class="step">Softmax ÷ Σ</span>
+  <span class="arrow">→</span>
+  <span class="step">91 Probabilities</span>
+  <br>
+  <span style="display:block;margin-top:12px;font-size:12px;color:#666;">
+    Each slider movement → 91 L1 distances → 91 similarities → 91 probabilities summing to 100%
+  </span>
+</div>
+
+<hr class="section-divider">
+
+<!-- ===== 6. MATH MODEL 2 ===== -->
+<h2 id="model2">6. Math Model 2: Composite Score Computation</h2>
+<p><strong>File:</strong> <code>src/data/traitScoring.ts</code> &middot; <strong>Functions:</strong> <code>computeCompositeScore()</code>, <code>computeAllScores()</code></p>
+<p><strong>Used in:</strong> Build-time pre-computation of the 1–10 trait scores from raw morphology data (producing <code>animalDatabase.ts</code>).</p>
+
+<h3>Step 1 — Weighted Linear Sum</h3>
+<p>For a given animal and category, compute the raw score as a dot product of the binary vector and weight vector:</p>
+
+<pre>
+raw_c = Σᵢ(vᵢ × wᵢ)
+
+<span class="comment">Where:</span>
+<span class="comment">  vᵢ ∈ {0, 1} = presence of sub-trait i for this animal</span>
+<span class="comment">  wᵢ ∈ ℤ = expert-defined weight for sub-trait i</span>
+<span class="comment">  c ∈ {Dentition, Skull_Proportions, Orbit_Vision, Mandible,</span>
+<span class="comment">       Nasal_Region, Muscle_Attachments, Cranial_Structure,</span>
+<span class="comment">       Special_Adaptations}</span>
+</pre>
+
+<h4>Example: Cat Dentition</h4>
+<p>The binary vector for cat dentition (length 27):</p>
+<pre>
+[0, 1, 0, 0, 0,  0, 0, 0, 0, 1,  0, 0, 0, 1, 0,  1, 0, 0, 1, 0,  0, 0, 0, 1, 0, 1, 0]
+</pre>
+<p>Corresponding weights (same positions):</p>
+<pre>
+[-2, -1, 0, 1, 0,  -2, 0, 2, 4, 6,  1, -1, -1, 4, 0,  1, 0, -1, 0, 0, 0, -1, 2, 5, 0, -1, -3]
+</pre>
+<p><strong>Calculation:</strong></p>
+<pre>
+raw = (1 × −1) + (1 × 6) + (1 × 4) + (1 × 1) + (1 × 0) + (1 × 5) + (1 × −1)
+    = −1 + 6 + 4 + 1 + 0 + 5 − 1
+    = <strong>14</strong>
+</pre>
+
+<div class="table-wrap"><table>
+  <tr><th>Active Sub-trait</th><th>Weight</th><th>Contribution</th></tr>
+  <tr><td>Incisor_Reduced</td><td>−1</td><td>−1</td></tr>
+  <tr><td>Canine_Extreme</td><td>+6</td><td>+6</td></tr>
+  <tr><td>CheekTooth_Secodont</td><td>+4</td><td>+4</td></tr>
+  <tr><td>Crown_Brachydont</td><td>+1</td><td>+1</td></tr>
+  <tr><td>Diastema_Absent</td><td>0</td><td>0</td></tr>
+  <tr><td>Carnassials_Strong</td><td>+5</td><td>+5</td></tr>
+  <tr><td>Dentition_Reduced</td><td>−1</td><td>−1</td></tr>
+</table></div>
+
+<h3>Step 2 — Min-Max Normalization to 1–10</h3>
+<pre>
+clamped = max(rMin, min(rMax, raw))
+normalized = (clamped − rMin) / (rMax − rMin)
+score = round(1 + 9 × normalized)
+</pre>
+
+<p><strong>Predefined ranges [rMin, rMax] per category:</strong></p>
+<div class="table-wrap"><table>
+  <tr><th>Category</th><th>rMin</th><th>rMax</th><th>Width</th></tr>
+  <tr><td>Dentition</td><td>−10</td><td>17</td><td>27</td></tr>
+  <tr><td>Skull_Proportions</td><td>−5</td><td>7</td><td>12</td></tr>
+  <tr><td>Orbit_Vision</td><td>−5</td><td>8</td><td>13</td></tr>
+  <tr><td>Mandible</td><td>−6</td><td>9</td><td>15</td></tr>
+  <tr><td>Nasal_Region</td><td>−3</td><td>8</td><td>11</td></tr>
+  <tr><td>Muscle_Attachments</td><td>−4</td><td>11</td><td>15</td></tr>
+  <tr><td>Cranial_Structure</td><td>−2</td><td>4</td><td>6</td></tr>
+  <tr><td>Special_Adaptations</td><td>0</td><td>10</td><td>10</td></tr>
+</table></div>
+
+<p><strong>Cat Dentition Example (continued):</strong></p>
+<pre>
+raw = 14
+clamped = max(−10, min(17, 14)) = 14
+normalized = (14 − (−10)) / (17 − (−10)) = 24/27 ≈ 0.8889
+score = round(1 + 9 × 0.8889) = round(9.0) = <strong>9</strong>
+</pre>
+
+<p>Verification: Cat's dentition in <code>animalDatabase.ts</code> = <strong>9</strong> ✓</p>
+
+<h3>Complete Score Examples</h3>
+<div class="table-wrap"><table>
+  <tr><th>Animal</th><th>Dent</th><th>Skull</th><th>Orbit</th><th>Mand</th><th>Nasal</th><th>Musc</th><th>Cran</th><th>Spec</th></tr>
+  <tr><td>Cat</td><td>9</td><td>3</td><td>9</td><td>6</td><td>3</td><td>7</td><td>3</td><td>7</td></tr>
+  <tr><td>Lion</td><td>9</td><td>5</td><td>9</td><td>10</td><td>4</td><td>8</td><td>6</td><td>6</td></tr>
+  <tr><td>Wolf</td><td>9</td><td>5</td><td>9</td><td>8</td><td>7</td><td>7</td><td>3</td><td>6</td></tr>
+  <tr><td>Cow</td><td>2</td><td>8</td><td>3</td><td>4</td><td>8</td><td>2</td><td>1</td><td>2</td></tr>
+  <tr><td>Elephant</td><td>3</td><td>10</td><td>2</td><td>9</td><td>10</td><td>6</td><td>6</td><td>2</td></tr>
+  <tr><td>Rat</td><td>3</td><td>3</td><td>4</td><td>3</td><td>2</td><td>2</td><td>1</td><td>3</td></tr>
+  <tr><td>Chimpanzee</td><td>5</td><td>4</td><td>10</td><td>6</td><td>3</td><td>6</td><td>7</td><td>2</td></tr>
+</table></div>
+
+<hr class="section-divider">
+
+<!-- ===== 7. MATH MODEL 3 ===== -->
+<h2 id="model3">7. Math Model 3: Biological Constraint Enforcement</h2>
+<p><strong>File:</strong> <code>src/lib/traitConstraints.ts</code> &middot; <strong>Function:</strong> <code>enforceConstraints()</code></p>
+<p><strong>Used in:</strong> The <code>/explore</code> page — runs before the matching engine whenever a slider changes.</p>
+
+<h3>Step 1 — Correlation Graph</h3>
+<p>A directed graph defining trait dependencies:</p>
+<pre>
+specialAdaptations → dentition, orbitVision, muscleAttachments
+dentition          → specialAdaptations, orbitVision, muscleAttachments
+orbitVision        → specialAdaptations, dentition
+muscleAttachments  → specialAdaptations, dentition
+skullProportions   → mandible
+mandible           → skullProportions
+nasalRegion        → ∅ (no constraints)
+cranialStructure   → ∅ (no constraints)
+</pre>
+
+<h3>Step 2 — Database-Driven Range Validation</h3>
+<p>When the user changes trait <code>T</code> to value <code>v</code>:</p>
+
+<pre>
+1. Matching = {a ∈ Database : |a[T] − v| ≤ τ}
+   <span class="comment">Where τ = 2 (tolerance)</span>
+
+2. For each correlated trait C:
+     minValid = max(1,  min({a[C] : a ∈ Matching}) − τ)
+     maxValid = min(10, max({a[C] : a ∈ Matching}) + τ)
+
+3. If currentValue[C] &lt; minValid → snap to minValid
+   If currentValue[C] &gt; maxValid → snap to maxValid
+</pre>
+
+<h4>Concrete Example</h4>
+<p>User sets <strong>Dentition = 10</strong> (maximum carnivore). Current <strong>Orbit &amp; Vision = 2</strong> (fully lateral, prey-like).</p>
+<ol>
+  <li>Matching animals with dentition ∈ [8, 10]: Cat, Cheetah, Coyote, Dog, Fox, Hyena, Jaguar, Lion, Tiger, Wolf, etc.</li>
+  <li>Their OrbitVision values: [7, 9]. Expand by τ=2 → minValid=5, maxValid=10.</li>
+  <li>User's OrbitVision = 2. Since 2 &lt; 5 → <strong>snap to 5</strong>.</li>
+</ol>
+
+<h3>Step 3 — Notification</h3>
+<p>A toast notification is generated with the message template:</p>
+<pre>
+"No animal in our database has [sourceTrait] ([value]) combined with [targetTrait] ([old]).
+ Adjusted [targetTrait] to [new]."
+</pre>
+<p>This explains the biological justification for the auto-adjustment.</p>
+
+<hr class="section-divider">
+
+<!-- ===== 8. MATH MODEL 4 ===== -->
+<h2 id="model4">8. Math Model 4: Diet Biochemistry Radar</h2>
+<p><strong>File:</strong> <code>src/components/AnimalDetailModal.tsx</code> &middot; <strong>Function:</strong> Inline calculation at render</p>
+<p><strong>Used in:</strong> The encyclopedia and explore page animal detail modals.</p>
+
+<h3>Step 1 — Baseline by Diet Category</h3>
+<div class="table-wrap"><table>
+  <tr><th>Axis</th><th>Carnivore</th><th>Herbivore</th><th>Omnivore</th><th>Insectivore</th></tr>
+  <tr><td>Protein (protease activity)</td><td>90</td><td>30</td><td>60</td><td>70</td></tr>
+  <tr><td>Fibre (cellulase via microbiota)</td><td>10</td><td>90</td><td>50</td><td>20</td></tr>
+  <tr><td>Fat (lipase requirements)</td><td>70</td><td>20</td><td>50</td><td>40</td></tr>
+  <tr><td>Starch (amylase capacity)</td><td>10</td><td>40</td><td>60</td><td>10</td></tr>
+  <tr><td>Chitin (chitinase activity)</td><td>20</td><td>10</td><td>20</td><td>90</td></tr>
+  <tr><td>Mineral (bone consumption)</td><td>30</td><td>40</td><td>30</td><td>20</td></tr>
+</table></div>
+
+<h3>Step 2 — Specialization Modulation</h3>
+<p>The <code>specialAdaptations</code> trait score modulates the baselines:</p>
+<pre>
+Protein_adj = min(100, Protein_base + (score/10) × 10)
+Fibre_adj   = max(10,  Fibre_base   − (score/10) × 20)
+</pre>
+<p>Higher specialization → more protein required, less fibre digestible (shifts toward hypercarnivory).</p>
+
+<h3>Step 3 — Polar-to-Cartesian Projection</h3>
+<p>Each axis <code>i</code> (0–5) maps to an angle:</p>
+<pre>
+θᵢ = (2π × i) / 6 − π/2
+</pre>
+<p>Data point coordinates for value <code>vᵢ</code> (0–100):</p>
+<pre>
+xᵢ = cx + (vᵢ/100) × r × cos(θᵢ)
+yᵢ = cy + (vᵢ/100) × r × sin(θᵢ)
+
+<span class="comment">Where (cx, cy) = (100, 90) = SVG center, r = 65 = radius</span>
+</pre>
+
+<p>The data polygon is formed by connecting all 6 points <code>(xᵢ, yᵢ)</code> in order, and a background grid of 4 concentric hexagons is drawn at 25%, 50%, 75%, 100% of radius.</p>
+
+<hr class="section-divider">
+
+<!-- ===== 9. MATH MODEL 5 ===== -->
+<h2 id="model5">9. Math Model 5: Particle Network Animation</h2>
+<p><strong>File:</strong> <code>src/components/ParticleCanvas.tsx</code></p>
+<p><strong>Used in:</strong> Background visual effect across all pages.</p>
+
+<h3>Particle Motion</h3>
+<pre>
+x ← x + vx
+y ← y + vy
+
+<span class="comment">Where vx, vy ~ Uniform(−0.25, 0.25)</span>
+</pre>
+
+<h3>Wrap-Around Boundary</h3>
+<pre>
+if x &lt; 0 → x = canvas.width
+if x &gt; canvas.width → x = 0
+</pre>
+
+<h3>Distance-Based Connection Lines</h3>
+<p>For every particle pair <code>(i, j)</code>:</p>
+<pre>
+dx = xᵢ − xⱼ
+dy = yᵢ − yⱼ
+dist = √(dx² + dy²)
+
+if dist &lt; 150 → draw line between (xᵢ, yᵢ) and (xⱼ, yⱼ)
+</pre>
+<p>The threshold of 150px limits connections to nearby particles only, creating a web-like appearance.</p>
+
+<h3>Sinusoidal Lifecycle</h3>
+<pre>
+opacity = sin((life / maxLife) × π) × 0.9
+</pre>
+<p>Creates a smooth fade-in/fade-out: opacity rises 0 → 0.9 → 0 over the particle's lifetime. When <code>life ≥ maxLife</code>, the particle is replaced.</p>
+
+<hr class="section-divider">
+
+<!-- ===== 10. MATH MODEL 6 ===== -->
+<h2 id="model6">10. Math Model 6: PixelBlast — WebGL Procedural Background</h2>
+<p><strong>File:</strong> <code>src/components/PixelBlast.tsx</code></p>
+<p><strong>Used in:</strong> Decorative background on all pages.</p>
+
+<h3>10.1 — Fractal Brownian Motion (fBm) Noise</h3>
+<p>5-octave value noise with user-configurable scale:</p>
+<pre>
+fbm(uv) = Σₖ (ampₖ × vnoise(p × freqₖ)) + 1
+         ────────────────────────────────
+                          2
+
+<span class="comment">Where:</span>
+<span class="comment">  octaves = 5</span>
+<span class="comment">  lacunarity = 1.25 (freq multiplier per octave)</span>
+<span class="comment">  gain = 1.0 (amp multiplier per octave)</span>
+<span class="comment">  vnoise(p) = 3D value noise using hash-based pseudo-random ±1.0</span>
+</pre>
+
+<h3>10.2 — Bayer Ordered Dithering</h3>
+<p>Creates the pixelated binary pattern:</p>
+<pre>
+bayer = Bayer8(fragCoord / pixelSize) − 0.5
+bw = step(0.5, fbm_output + bayer)
+</pre>
+<p>The Bayer8 function produces an 8×8 dithering matrix that distributes quantization error spatially, creating smooth gradients from a binary pixel grid.</p>
+
+<h3>10.3 — Shape Generation</h3>
+<p>Each pixel can be one of four shapes, controlled by coverage threshold <code>M</code>:</p>
+<div class="table-wrap"><table>
+  <tr><th>Shape</th><th>Equation</th></tr>
+  <tr><td>Square</td><td>M = coverage (direct fill)</td></tr>
+  <tr><td>Circle</td><td>M = 1 − smoothstep(−aa, aa, (|p − 0.5| − r) × 2), r = √coverage × 0.25</td></tr>
+  <tr><td>Triangle</td><td>d = p.y − r × (1 − p.x), M = clamp(0.5 − d/aa, 0, 1), r = √coverage</td></tr>
+  <tr><td>Diamond</td><td>M = step(|p.x − 0.49| + |p.y − 0.49|, r), r = √coverage × 0.564</td></tr>
+</table></div>
+
+<h3>10.4 — Interactive Ripple Effect</h3>
+<p>When the user clicks, concentric ripples propagate outward:</p>
+<pre>
+waveR = speed × t
+ring = exp(−((r − waveR) / thickness)²)
+atten = exp(−dampT × t) × exp(−dampR × r)
+feed = max(feed, ring × atten × uRippleIntensity)
+</pre>
+<p>The ring is a Gaussian centered at <code>waveR</code> with standard deviation <code>thickness</code>, attenuated exponentially by time (dampT = 1.0) and distance (dampR = 10.0).</p>
+
+<h3>10.5 — sRGB Gamma Correction</h3>
+<pre>
+srgb = if color ≤ 0.0031308:
+           color × 12.92
+       else:
+           1.055 × color^(1/2.4) − 0.055
+</pre>
+<p>This converts linear-space colors to sRGB for correct display on standard monitors.</p>
+
+<hr class="section-divider">
+
+<!-- ===== 11. ZOOLOGY ===== -->
+<h2 id="zoology">11. Zoological Domain Logic</h2>
+
+<h3>11.1 The 8 Trait Axes</h3>
+<p>Each trait maps to a known evolutionary axis of mammalian skull morphology:</p>
+<div class="table-wrap"><table>
+  <tr><th>Trait</th><th>1 (Low)</th><th>10 (High)</th><th>Biological Meaning</th></tr>
+  <tr><td>Dentition</td><td>Herbivore grinding</td><td>Carnassial shearing</td><td>Tooth specialization for diet</td></tr>
+  <tr><td>Skull Proportions</td><td>Gracile / narrow</td><td>Broad / robust</td><td>Overall skull strength &amp; shape</td></tr>
+  <tr><td>Orbit &amp; Vision</td><td>Fully lateral (prey)</td><td>Forward-facing (predator)</td><td>Binocular vision &amp; hunting ability</td></tr>
+  <tr><td>Mandible</td><td>Shallow / weak</td><td>Deep / powerful</td><td>Bite force potential</td></tr>
+  <tr><td>Nasal Region</td><td>Short / flat</td><td>Long snout / proboscis</td><td>Olfaction &amp; feeding strategy</td></tr>
+  <tr><td>Muscle Attachments</td><td>Weak / smooth</td><td>Extreme crests / fossae</td><td>Jaw muscle development</td></tr>
+  <tr><td>Cranial Structure</td><td>Flat / primitive</td><td>Expanded / derived</td><td>Brain size &amp; complexity</td></tr>
+  <tr><td>Diet Specialization</td><td>Generalist herbivore</td><td>Highly specialized carnivore</td><td>Niche adaptation level</td></tr>
+</table></div>
+
+<h3>11.2 Observable Patterns</h3>
+<div class="table-wrap"><table>
+  <tr><th>Group</th><th>Dent</th><th>Orbit</th><th>Mand</th><th>Musc</th><th>Cran</th><th>Signature</th></tr>
+  <tr><td>Carnivores (Cat, Lion, Wolf)</td><td>7–9</td><td>7–9</td><td>6–10</td><td>4–9</td><td>3–6</td><td>High dentition + forward eyes + powerful jaw</td></tr>
+  <tr><td>Herbivores (Cow, Deer, Zebra)</td><td>2–3</td><td>2–4</td><td>3–4</td><td>1–2</td><td>1–3</td><td>Low dentition + lateral eyes</td></tr>
+  <tr><td>Rodents (Beaver, Rat, Capybara)</td><td>3–4</td><td>1–2</td><td>3–5</td><td>1–5</td><td>1</td><td>Continuously-growing incisors, flat cranium</td></tr>
+  <tr><td>Primates (Chimp, Gorilla, Human-adjacent)</td><td>5–6</td><td>7–10</td><td>5–10</td><td>6–9</td><td>4–10</td><td>Forward-facing eyes, expanded braincase</td></tr>
+  <tr><td>Insectivores (Aardvark, Anteater)</td><td>2</td><td>2–3</td><td>2–5</td><td>1</td><td>3–5</td><td>Reduced/absent teeth, tubular snout</td></tr>
+</table></div>
+
+<div class="info-box">
+  <strong>Key Educational Insight:</strong> The app demonstrates <strong>convergent evolution</strong> — unrelated animals in similar niches develop similar skull traits (e.g., wolf and Tasmanian devil are not closely related but share high dentition, strong mandibles, and forward-facing eyes).
+</div>
+
+<hr class="section-divider">
+
+<!-- ===== 12. PAGES ===== -->
+<h2 id="pages">12. Pages &amp; Routes</h2>
+<div class="table-wrap"><table>
+  <tr><th>Route</th><th>Component</th><th>Purpose</th></tr>
+  <tr><td><code>/</code></td><td>Home page</td><td>Landing with stats (91 animals, 8 traits) and CTA to start exploring</td></tr>
+  <tr><td><code>/explore</code></td><td>SliderExplorer</td><td><strong>Core feature</strong> — interactive trait-matching engine with 8 sliders + live probability panel</td></tr>
+  <tr><td><code>/encyclopedia</code></td><td>Encyclopedia</td><td>Searchable, filterable browser of all 91 mammals with detail modals</td></tr>
+  <tr><td><code>/skull-lab</code></td><td>SkullLab</td><td>Dental morphology educational viewer (5 molar types with descriptions)</td></tr>
+</table></div>
+
+<hr class="section-divider">
+
+<!-- ===== 13. COMPONENTS ===== -->
+<h2 id="components">13. Component Architecture</h2>
+
+<div class="table-wrap"><table>
+  <tr><th>Component</th><th>Type</th><th>Responsibilities</th></tr>
+  <tr><td><code>SliderExplorer</code></td><td>State Orchestrator</td><td>Manages slider values, calls constraint enforcement, triggers probability calculation</td></tr>
+  <tr><td><code>TraitSlider</code></td><td>UI Control</td><td>Renders a single 1–10 slider with labels, tracks, and auto-adjust highlighting</td></tr>
+  <tr><td><code>AnimalProbabilityPanel</code></td><td>Display</td><td>Shows top 10 matches with probability bars and match scores</td></tr>
+  <tr><td><code>AnimalDetailModal</code></td><td>Overlay</td><td>Full animal profile: Wikipedia image, skull specimen, 8 trait bars, radar chart, QR code</td></tr>
+  <tr><td><code>AnimalCardImage</code></td><td>Display</td><td>Lazy-loaded Wikipedia thumbnail using IntersectionObserver</td></tr>
+  <tr><td><code>Encyclopedia</code></td><td>Browser</td><td>Search + 3 filter dropdowns (order, diet, habitat) over all 91 animals</td></tr>
+  <tr><td><code>SkullLab</code></td><td>Educational</td><td>Molar type selector with SVG illustrations and trilingual anatomical descriptions</td></tr>
+  <tr><td><code>ConstraintNotification</code></td><td>Toast</td><td>Auto-dismissing notification with slide-in animation</td></tr>
+  <tr><td><code>ImageMagnifier</code></td><td>Utility</td><td>Hover zoom for skull specimen images</td></tr>
+  <tr><td><code>PixelBlast</code></td><td>Background</td><td>WebGL pixel effect with fBm noise, dithering, ripples, and liquid distortion</td></tr>
+  <tr><td><code>ParticleCanvas</code></td><td>Background</td><td>Canvas 2D particle network with connection lines</td></tr>
+  <tr><td><code>LanguageProvider</code></td><td>Context</td><td>React Context for EN/SI/TA language state persistence in localStorage</td></tr>
+  <tr><td><code>Navigation</code></td><td>Layout</td><td>Sticky top nav with language toggle and mobile hamburger menu</td></tr>
+</table></div>
+
+<hr class="section-divider">
+
+<!-- ===== 14. DATA FLOW ===== -->
+<h2 id="dataflow">14. Data Flow</h2>
+
+<p>The following diagram traces a complete user interaction cycle:</p>
+
+<pre>
+<span class="keyword">User adjusts slider</span>
+        │
+        ▼
+<span class="func">SliderExplorer.handleSliderChange()</span>
+        │
+        ├──▶ <span class="func">traitConstraints.enforceConstraints()</span>
+        │       │   1. Find matching animals (|a[T] − v| ≤ 2)
+        │       │   2. Compute valid range for correlated traits
+        │       │   3. Snap out-of-range traits to valid bounds
+        │       │   4. Generate notification toasts
+        │       ▼
+        │   <span class="keyword">Updated sliderValues state</span>
+        │
+        ▼
+<span class="func">useMemo → calculateProbabilities(sliderValues, ANIMALS_DATABASE)</span>
+        │
+        │   1. For each of 91 animals: dᵢ = Σₜ|uₜ − aᵢₜ|
+        │   2. For each animal: sᵢ = exp(−dᵢ × 0.25)
+        │   3. For each animal: Pᵢ = sᵢ / Σsⱼ × 100%
+        │   4. Sort descending by probability
+        │
+        ▼
+<span class="keyword">AnimalProbabilityPanel renders top 10 matches</span>
+        │
+        ▼
+<span class="keyword">User clicks animal → AnimalDetailModal</span>
+        │
+        ├──▶ Fetch Wikipedia image (client-side API call)
+        ├──▶ Load skull image from local filesystem
+        ├──▶ Compute radar chart (diet biochemistry hexagon)
+        └──▶ Generate QR code for Wikipedia page
+</pre>
+
+<hr class="section-divider">
+
+<!-- ===== 15. I18N ===== -->
+<h2 id="i18n">15. Trilingual Architecture (EN / SI / TA)</h2>
+
+<p><strong>File:</strong> <code>src/components/LanguageProvider.tsx</code></p>
+
+<p>The app supports three languages:</p>
+<ul>
+  <li><strong>en</strong> — English</li>
+  <li><strong>si</strong> — Sinhala (සිංහල)</li>
+  <li><strong>ta</strong> — Tamil (தமிழ்)</li>
+</ul>
+
+<h3>Storage</h3>
+<p>Language preference is persisted in <code>localStorage</code> under the key <code>skullg_lang</code>.</p>
+
+<h3>Pattern</h3>
+<p>Every user-facing string is stored as a <code>Record&lt;Language, string&gt;</code>:</p>
+
+<pre>
+<span class="keyword">const</span> texts = {
+  title: {
+    en: <span class="string">"Skull-Based Animal Classification"</span>,
+    si: <span class="string">"හිස්කබල් මත පදනම් වූ සත්ව වර්ගීකරණය"</span>,
+    ta: <span class="string">"மண்டை ஓடு சார்ந்த விலங்கு வகைப்பாடு"</span>
+  }
+};
+
+<span class="keyword">const</span> t = (en, si, ta) => {
+  <span class="keyword">if</span> (language === <span class="string">'si'</span>) <span class="keyword">return</span> si;
+  <span class="keyword">if</span> (language === <span class="string">'ta'</span>) <span class="keyword">return</span> ta;
+  <span class="keyword">return</span> en;
+};
+</pre>
+
+<p>The <code>useLanguage()</code> hook provides <code>{ language, setLanguage, t }</code> to all components.</p>
+
+<hr class="section-divider">
+
+<!-- ===== 16. DEVELOPMENT ===== -->
+<h2 id="development">16. Development Process &amp; Deployment</h2>
+
+<h3>Development Commands</h3>
+<pre>
+<span class="comment"># Install dependencies</span>
+npm install
+
+<span class="comment"># Start development server (http://localhost:3000)</span>
+npm run dev
+
+<span class="comment"># Build for production</span>
+npm run build
+
+<span class="comment"># Start production server</span>
+npm start
+
+<span class="comment"># Run linter</span>
+npm run lint
+</pre>
+
+<h3>Dependencies</h3>
+<div class="table-wrap"><table>
+  <tr><th>Package</th><th>Version</th><th>Category</th></tr>
+  <tr><td>next</td><td>^15.3.0</td><td>Framework</td></tr>
+  <tr><td>react</td><td>^19.2.6</td><td>UI</td></tr>
+  <tr><td>react-dom</td><td>^19.2.6</td><td>UI</td></tr>
+  <tr><td>three</td><td>^0.184.0</td><td>3D Graphics</td></tr>
+  <tr><td>postprocessing</td><td>^6.39.1</td><td>WebGL Effects</td></tr>
+  <tr><td>lucide-react</td><td>^1.17.0</td><td>Icons</td></tr>
+  <tr><td>qrcode.react</td><td>^4.2.0</td><td>QR Generation</td></tr>
+  <tr><td>tailwindcss</td><td>^4.3.0</td><td>CSS (dev)</td></tr>
+  <tr><td>typescript</td><td>~5.8.0</td><td>Language (dev)</td></tr>
+</table></div>
+
+<h3>Browser Support</h3>
+<p>Modern browsers with WebGL support. The app uses:</p>
+<ul>
+  <li>CSS <code>backdrop-filter</code> for glassmorphism effects</li>
+  <li>WebGL 2.0 for PixelBlast background (Three.js)</li>
+  <li>Canvas 2D for particle network fallback</li>
+  <li>ES2020+ modules (compiled by Next.js)</li>
+</ul>
+
+<hr class="section-divider">
+
+<!-- ===== 17. GLOSSARY ===== -->
+<h2 id="glossary">17. Glossary</h2>
+
+<div class="table-wrap"><table>
+  <tr><th>Term</th><th>Definition</th></tr>
+  <tr><td><strong>Craniomorphology</strong></td><td>The study of skull shape and form for identification and classification</td></tr>
+  <tr><td><strong>Carnassial</strong></td><td>Specialized shearing teeth (upper premolar + lower molar) in carnivores that work like scissors</td></tr>
+  <tr><td><strong>Secodont</strong></td><td>Cheek teeth adapted for cutting flesh (sharp, blade-like cusps)</td></tr>
+  <tr><td><strong>Bunodont</strong></td><td>Low, rounded cusps for crushing (omnivores like humans, pigs)</td></tr>
+  <tr><td><strong>Selenodont</strong></td><td>Crescent-shaped ridges for grinding (ruminants)</td></tr>
+  <tr><td><strong>Lophodont</strong></td><td>Elongated enamel ridges for grinding tough plants (elephants, horses)</td></tr>
+  <tr><td><strong>Hypsodont</strong></td><td>High-crowned teeth that continuously erupt (grazers eating silica-rich grass)</td></tr>
+  <tr><td><strong>Brachydont</strong></td><td>Low-crowned teeth (humans, carnivores)</td></tr>
+  <tr><td><strong>Postorbital Bar</strong></td><td>A bony bar behind the eye socket; completeness indicates degree of binocular vision</td></tr>
+  <tr><td><strong>Sagittal Crest</strong></td><td>A bony ridge on the top of the skull for jaw muscle attachment</td></tr>
+  <tr><td><strong>Temporal Fossa</strong></td><td>A depression on the side of the skull housing the temporalis muscle (jaw closing)</td></tr>
+  <tr><td><strong>Zygomatic Arch</strong></td><td>The cheekbone; robust = strong jaw muscles</td></tr>
+  <tr><td><strong>Foramen Magnum</strong></td><td>The hole in the base of the skull where the spinal cord enters; position relates to posture</td></tr>
+  <tr><td><strong>Diastema</strong></td><td>A gap between teeth, common in herbivores for manipulating plant material</td></tr>
+  <tr><td><strong>fBm</strong></td><td>Fractal Brownian Motion — a procedural noise technique that layers multiple octaves of noise</td></tr>
+  <tr><td><strong>Bayer Dithering</strong></td><td>Ordered dithering using a Bayer matrix to convert continuous values to binary patterns</td></tr>
+  <tr><td><strong>L1 Distance</strong></td><td>Manhattan distance — sum of absolute differences between two vectors</td></tr>
+  <tr><td><strong>Softmax</strong></td><td>A function that converts a vector of real numbers into a probability distribution</td></tr>
+  <tr><td><strong>Min-Max Normalization</strong></td><td>Scaling values to a fixed range using (x − min) / (max − min)</td></tr>
+</table></div>
+
+<hr class="section-divider">
+
+<p style="text-align:center;color:#6B6A92;font-size:12px;margin:40px 0;">
+  SKAL4R Project Documentation &mdash; Generated June 2026<br>
+  Skull-Based Animal Classification Using Adaptive Reasoning — Model 4
+</p>
+
+</div>
+</body>
+</html>
